@@ -1,0 +1,46 @@
+Question,Answer
+~answer_language,de
+-er,der
+-ling,der
+-ig,der
+-ismus,der
+-ich,der
+-us,der
+-in,die
+-e,die (кроме муж)
+-heit,die
+-ung,die
+-keit,die
+-ei,die
+-schaft,die
+-tion,die
+-tät,die
+-ik,die
+-chen,das
+-lein,das
+Ge-,das
+"Lesen, Hören, Schreiben", das
+"Hotel, Cafe, Kino", das
+"Gold, Silber, Eisen, Kupfer", das
+~question_language,ru
+"Цвета, языкиб буквы, ноты, ед.изм.", das
+"Географичиские названия", "das, если с прилагательным, иначе без артикля"
+~question_language,de
+-um,das
+-ma,das
+-ment,das
+-ant,der (деятель)
+-ent,der (деятель)
+-ist,der (деятель)
+-loge,der (деятель)
+-eur,der (деятель)
+-är,der (деятель)
+-or,der (деятель)
+gehen - Gang,der
+springen - Sprung,der
+springen - Sprung,der
+laufen - Lauf,der
+"Wein, Sekt, Kognak, Saft",der
+~question_language,ru
+"деревья, цветы, травы",die
+"реки, кроме", "die, кроме der Rhein, der Main, der Neckar"

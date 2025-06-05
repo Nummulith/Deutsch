@@ -1,0 +1,15 @@
+Question,Answer
+~question_language,de
+~answer_language,de
+der *-en, die *-en
+der *-el, die *-el
+der *-er, die *-er
+"das *-chen, *-lein", "die *-chen, *-lein"
+~question_language,ru
+большинство, "-e, -er, иногда умляют"
+односложные слова: die *, die *-e и умляют
+неодносложные слова: die *, die *-en
+~question_language,de
+die *-in, die *-in-nen
+~question_language,ru
+англицизмы *, *-s
