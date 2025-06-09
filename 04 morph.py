@@ -5,12 +5,12 @@ import spacy
 nlp = spacy.load("de_core_news_sm")
 print("spacy.loaded")
 
-input  = "subs//wa_stat.csv"
-output = "subs//wa_morph.csv"
+input  = ".\\out\\translate.csv"
+output = ".\\out\\morph.csv"
 
 with open(output, 'w', encoding='utf-8', newline='') as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow(["Wort", "Count", "Lemma", "Pos", "Number", "Case", "Gender", "VerbForm", "Person", "Mood", "Tense", "Degree", "PronType", "Foreign", "Poss", "Definite", "Reflex"]) # , "Morph"
+    writer.writerow(["Wort", "Num", "Ru", "Lemma", "Pos", "Number", "Case", "Gender", "VerbForm", "Person", "Mood", "Tense", "Degree", "PronType", "Foreign", "Poss", "Definite", "Reflex"]) # , "Morph"
 
     with open(input, encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -18,6 +18,7 @@ with open(output, 'w', encoding='utf-8', newline='') as csvfile:
 
             word = row['Wort']
             num  = row['Num']
+            ru   = row['Ru']
             print(f"\r{(f'Wort: {word}'):<70}", end='', flush=True)
 
             doc = nlp(word)
@@ -26,6 +27,7 @@ with open(output, 'w', encoding='utf-8', newline='') as csvfile:
                 row = [
                     token.text,
                     num,
+                    ru,
                     token.lemma_,
                     token.pos_,
                     morph.get("Number", ""),

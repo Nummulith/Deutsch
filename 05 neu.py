@@ -1,10 +1,11 @@
 import os
 import csv
 
-input  = ".\\subs\\wa_morph.csv"
-# input  = ".\\03 Лексика.csv"
 wheres = [".\\cards\\lex", ".\\cards\\themes", ".\\cards\\exclude"]
-output = ".\\lex.csv"
+
+input  = ".\\out\\morph.csv"
+# input  = ".\\03 Лексика.csv"
+output = ".\\out\\neu.csv"
 
 def pr(txt):
     print(f"\r{(txt):<70}", end='', flush=True)
@@ -17,7 +18,7 @@ with open(input, encoding='utf-8') as f:
 
     with open(output, 'w', encoding='utf-8', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["Question"])
+        writer.writerow(["Question", "Answer"])
 
         count = 0
 
@@ -32,15 +33,19 @@ with open(input, encoding='utf-8') as f:
             elif "Pos" in row and row["Pos"] == "NOUN":
                 target_word = row["Lemma"]
                 target_word = target_word.capitalize()
-                if row["Gender"] == "Masc":
-                    target_word = "der " + target_word
-                if row["Gender"] == "Neut":
-                    target_word = "das " + target_word
-                if row["Gender"] == "Fem":
+                if row["Number"] == "Sing":
+                    if row["Gender"] == "Masc":
+                        target_word = "der " + target_word
+                    if row["Gender"] == "Neut":
+                        target_word = "das " + target_word
+                    if row["Gender"] == "Fem":
+                        target_word = "die " + target_word
+                elif row["Number"] == "Plur":
                     target_word = "die " + target_word
+
             else:
                 target_word = target_word.lower()
-
+            
             found = False
             for where in wheres:
                 for filename in os.listdir(where):
@@ -62,8 +67,13 @@ with open(input, encoding='utf-8') as f:
             if found:
                 continue
 
-            writer.writerow([target_word])
+            ru = row["Ru"]
+            if row["Ru"] == "":
+                print(target_word)
+                continue
+
+            writer.writerow([target_word, ru])
 
             count += 1
-            if count >= 100:
-                break
+            # if count >= 100:
+            #     break

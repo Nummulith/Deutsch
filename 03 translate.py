@@ -1,9 +1,9 @@
 import csv
 import re
 
-dictionary = '.\\dict.cc\\dict.cc.csv'
-input  = "statistix.csv"
-output = "translate.csv"
+dictionary = '.\\doc\\dict.cc\\dict.cc.csv'
+input  = ".\\out\\splitter.csv"
+output = ".\\out\\translate.csv"
 
 with open(input , "r", encoding="utf-8") as infile,\
      open(output, 'w', encoding='utf-8', newline='') as csvout,\
@@ -12,10 +12,10 @@ with open(input , "r", encoding="utf-8") as infile,\
     dictreader = csv.DictReader(dictfile, delimiter='\t')
 
     reader = csv.DictReader(infile)
-    words = [row['Wort'] for row in reader]
+    words = {row['Wort'].lower():row for row in reader}
     
     writer = csv.writer(csvout)
-    writer.writerow(["Wort", "Ru"])
+    writer.writerow(["Wort", "Num", "Ru"])
 
     trans = {}
     for row in dictreader:
@@ -37,8 +37,9 @@ with open(input , "r", encoding="utf-8") as infile,\
         else:
             trans[de] += " / " + ru
 
-    for word in words:
+    for word, row in words.items():
         if word in trans:
-            writer.writerow([word, trans[word]])
+            writer.writerow([word, row["Num"], trans[word]])
         else:
-            writer.writerow([word, ""])
+            writer.writerow([word, row["Num"], ""])
+            print(word)

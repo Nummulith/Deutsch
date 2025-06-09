@@ -1,7 +1,7 @@
 import langid
 
-input = 'cards\\some\\test+.txt'
-output = "detect.txt"
+input  = '.\\cards\\some\\test+.txt'
+output = '.\\out\\detect.txt'
 
 with open(input , "r", encoding="utf-8") as infile , \
      open(output, "w", encoding="utf-8") as outfile:

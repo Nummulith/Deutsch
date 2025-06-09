@@ -71,11 +71,17 @@ for csv_file in Path(input).glob('*.csv'):
                 make_rev = not name_rev.exists()
 
             if make_fwd or make_rev:
-                q_audio = gTTS(q_text, lang=q_lang).save(tmp_path)
-                q = AudioSegment.from_mp3(tmp_path)
 
-                a_audio = gTTS(a_text, lang=a_lang).save(tmp_path)
-                a = AudioSegment.from_mp3(tmp_path)
+                try:
+                    q_audio = gTTS(q_text, lang=q_lang).save(tmp_path)
+                    q = AudioSegment.from_mp3(tmp_path)
+
+                    a_audio = gTTS(a_text, lang=a_lang).save(tmp_path)
+                    a = AudioSegment.from_mp3(tmp_path)
+                except Exception as e:
+                    print(f"error {q_text} - {a_text}: {e}")
+                    make_fwd = False
+                    make_rev = False
 
                 i = i + 1
 
