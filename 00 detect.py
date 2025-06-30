@@ -1,6 +1,6 @@
 import langid
 
-input  = '.\\cards\\some\\test+.txt'
+input  = '.\\cards\\course\\05 Существительные - Предлоги.csv'
 output = '.\\out\\detect.txt'
 
 with open(input , "r", encoding="utf-8") as infile , \

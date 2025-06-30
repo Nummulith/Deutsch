@@ -1,14 +1,24 @@
-Question,Answer
+Question,Beispiel_masc / Beispiel_fem / Beispiel_neut / Beispiel_pl / Case
 ~reverse,True
 ~answer_language,de
-mit,Dativ
-für,Akkusativ
-nach,Dativ
-um,Akkusativ
-aus,Dativ
-durch,Akkusativ
-zu,Dativ
-ohne,Akkusativ
-von,Dativ
-gegen,Akkusativ
-bei,Dativ
+mit,mit dem Mann / mit der Frau / mit dem Kind / mit den Freunden (Dativ)
+für,für den Mann / für die Frau / für das Kind / für die Freunde (Akkusativ)
+nach,nach dem Urlaub / nach der Arbeit / nach dem Essen / nach den Ferien (Dativ)
+um,um den Tisch / um die Lampe / um das Haus / um die Bäume (Akkusativ)
+aus,aus dem Auto / aus der Schule / aus dem Zimmer / aus den Gebäuden (Dativ)
+durch,durch den Tunnel / durch die Tür / durch das Fenster / durch die Straßen (Akkusativ)
+zu,zum Arzt / zur Mutter / zum Hotel / zu den Gästen (Dativ)
+ohne,ohne den Vater / ohne die Schwester / ohne das Buch / ohne die Leute (Akkusativ)
+von,vom Lehrer / von der Freundin / vom Tier / von den Nachbarn (Dativ)
+gegen,gegen den Plan / gegen die Idee / gegen das Gesetz / gegen die Regeln (Akkusativ)
+bei,beim Bäcker / bei der Ärztin / beim Konzert / bei den Eltern (Dativ)
+seit,seit dem Tag / seit der Woche / seit dem Monat / seit den Jahren (Dativ)
+ab,ab dem Moment / ab der Stunde / ab dem Tag / ab den Ferien (Dativ)
+an,an den Strand / an die Wand / ans Fenster / an die Grenzen (Akkusativ / Dativ)
+in,in den Park / in die Stadt / ins Zimmer / in die Länder (Akkusativ / Dativ)
+auf,auf den Stuhl / auf die Straße / aufs Sofa / auf die Dächer (Akkusativ / Dativ)
+über,über den Fluss / über die Brücke / über das Problem / über die Grenzen (Akkusativ / Dativ)
+unter,unter den Tisch / unter die Decke / unter das Bett / unter die Leute (Akkusativ / Dativ)
+vor,vor den Eingang / vor die Tür / vor das Fenster / vor die Häuser (Akkusativ / Dativ)
+hinter,hinter den Schrank / hinter die Wand / hinter das Regal / hinter die Gebäude (Akkusativ / Dativ)
+zwischen,zwischen den Stühlen / zwischen der Wand / zwischen dem Fenster / zwischen den Häusern (Akkusativ / Dativ)

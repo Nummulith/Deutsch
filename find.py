@@ -1,7 +1,7 @@
 import os
 import csv
 
-input = ".\\cards\\themes\\я wo, da.csv"
+input = ".\\out\\neu.csv"
 wheres = [".\\cards\\exclude", ".\\cards\\lex", ".\\cards\\themes"]
 
 def pr(txt):

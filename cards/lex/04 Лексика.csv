@@ -1,6 +1,6 @@
 Question,Answer
 ~reverse,True
-regel,правило {с} / принцип {м}
+die Regel,правило
 gehören, принадлежать
 der Staat, государство
 bedeutet,означает
@@ -30,14 +30,13 @@ frisch,свежий
 kalt,холодный
 warm,тёплый
 heiß,горячий
-schwer,тяжёлый
+schwer,тяжёлый / сложный
 wandern, путешествовать
 kriegen, получать
 leicht, легкий
 günstig, доступный по цене
 der Gott,бог
 die Erde,Земля
-können,"мочь, уметь"
 passieren,происходить
 der Mensch,человек
 lassen,оставлять / позволять
@@ -51,8 +50,3 @@ letzte,последний
 selbst,сам
 der Mann,мужчина
 das Ding,вещь
-die Entschuldigung,извинение
-sagen,говорить
-Leute,люди
-die Ordnung,порядок
-unten,внизу

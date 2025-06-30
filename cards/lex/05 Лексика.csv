@@ -1,5 +1,6 @@
 Question,Answer
 ~reverse,True
+die Entschuldigung,извинение
 der Baum,дерево
 der Himmel,небо 
 die Blume,цветок 
@@ -15,7 +16,6 @@ der Wald,лес
 die Apotheke, аптека) 
 der Schulhof, школьный двор
 das Silvester, канун Нового года
-der Tomatensaft, томатный сок
 der Sekt, шампанское
 der Wodka, водка
 der Fisch, рыба
@@ -27,7 +27,7 @@ das Rot, красный
 das Gelb, жёлтый
 das Grün, зелёный
 bei Grün, на зелёный свет
-der Fluss, река
+der Fluss,река {ж} / течение {с}
 der Himmel, небо
 die Wolke, облако
 das Silber, серебро

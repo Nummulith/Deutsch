@@ -1,11 +1,11 @@
 import os
 import csv
 
-wheres = [".\\cards\\lex", ".\\cards\\themes", ".\\cards\\exclude"]
-
-input  = ".\\out\\morph.csv"
-# input  = ".\\03 Лексика.csv"
+# input  = ".\\out\\morph.csv"
+input  = ".\\out\\neu+.csv"
 output = ".\\out\\neu.csv"
+
+alreadies = [".\\cards\\lex", ".\\cards\\themes", ".\\cards\\exclude"]
 
 def pr(txt):
     print(f"\r{(txt):<70}", end='', flush=True)
@@ -25,11 +25,14 @@ with open(input, encoding='utf-8') as f:
         for i, row in enumerate(reader):
             # pr(f"{i}, {row["Question"]}, {row["Answer"]}")
             target_word = row["Wort"].strip()
+            
             if target_word[0] == "~":
                 continue
+
             if "Pos" in row and (row["Pos"] == "VERB" or row["Pos"] == "AUX" or row["Pos"] == "ADJ" or row["Pos"] == "PRON"):
                 target_word = row["Lemma"]
                 target_word = target_word.lower()
+
             elif "Pos" in row and row["Pos"] == "NOUN":
                 target_word = row["Lemma"]
                 target_word = target_word.capitalize()
@@ -43,15 +46,15 @@ with open(input, encoding='utf-8') as f:
                 elif row["Number"] == "Plur":
                     target_word = "die " + target_word
 
-            else:
-                target_word = target_word.lower()
+            # else:
+            #     target_word = target_word.lower()
             
             found = False
-            for where in wheres:
-                for filename in os.listdir(where):
+            for already in alreadies:
+                for filename in os.listdir(already):
                     if not filename.endswith(".csv"):
                         continue
-                    filepath = os.path.join(where, filename)
+                    filepath = os.path.join(already, filename)
                     if filepath == input:
                         continue
                     try:

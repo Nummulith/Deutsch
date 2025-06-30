@@ -1,0 +1,204 @@
+Wort,En,Form
+gut,good,adjective
+schlecht,bad,adjective
+neu,new,adjective
+alt,old,adjective
+jung,young,adjective
+groß,big,adjective
+klein,small,adjective
+schön,beautiful,adjective
+billig,cheap,adjective
+teuer,expensive,adjective
+dunkel,dark,adjective
+hell,bright,adjective
+zusammen,together,adjective
+getrennt,separate,adjective
+wichtig,important,adjective
+müde,tired,adjective
+Farbe,color,color
+weiß,white,color
+schwarz,black,color
+rot,red,color
+blau,blue,color
+grün,green,color
+gelb,yellow,color
+bunt,colorful,color
+Hallo!,Hi!,communication
+Guten Tag!,Hello!,communication
+Tschüß!,Goodbye! / Bye!,communication
+Danke!,Thank you!,communication
+Bitte!,Please!,communication
+Entschuldigung!,Sorry!,communication
+Stopp!,Stop!,communication
+Vorsicht!,Caution!,communication
+ja,yes,communication
+nein,no,communication
+vegetarisch,vegetarian,food
+vegan,vegan,food
+glutenfrei,gluten-free,food
+alkoholfrei,non-alcoholic,food
+Prost!,Cheers!,food
+das Essen,food,food
+das Restaurant,restaurant,food
+das Café,café,food
+die Bar,bar,food
+die Speisekarte,menu,food
+die Vorspeise,starter,food
+die Hauptspeise,main course,food
+der Nachtisch,dessert,food
+die Rechnung,bill,food
+der Fisch,fish,food
+das Fleisch,meat,food
+der Salat,salad,food
+die Milch,milk,food
+der Käse,cheese,food
+das Obst,fruits,food
+das Gemüse,vegetables,food
+die Nüsse,nuts,food
+der Kaffee,coffee,food
+der Tee,tea,food
+das Wasser,water,food
+der Wein,wine,food
+das Bier,beer,food
+der Arzt / die Ärztin,doctor,health
+das Krankenhaus,hospital,health
+die Apotheke,pharmacy,health
+die Schmerzmittel,painkiller,health
+das Medikament,medicine,health
+die Schmerzen,pain,health / body
+der Rücken,back,health / body
+der Fuß,foot,health / body
+der Bauch,stomach,health / body
+das Bein,leg,health / body
+der Kopf,head,health / body
+die Hand,hand,health / body
+der Arm,arm,health / body
+eins,one,numbers
+zwei,two,numbers
+drei,three,numbers
+vier,four,numbers
+fünf,five,numbers
+sechs,six,numbers
+sieben,seven,numbers
+acht,eight,numbers
+neun,nine,numbers
+zehn,ten,numbers
+zwanzig,twenty,numbers
+fünfzig,fifty,numbers
+hundert,hundred,numbers
+tausend,thousand,numbers
+die Richtung,direction,orientation
+der Eingang,entrance,orientation
+der Ausgang,exit,orientation
+die Straße,street,orientation
+der Weg,way,orientation
+der Platz,square,orientation
+rechts,right,orientation
+links,left,orientation
+geradeaus,straight ahead,orientation
+zurück,back,orientation
+der Vorname,first name,personal-information
+der Nachname,last name,personal-information
+die Adresse,address,personal-information
+das Land,country,personal-information
+der Geburtsort,place of birth,personal-information
+das Geburtsdatum,date of birth,personal-information
+der Beruf,profession / job,personal-information
+der Mann,man,personal-information
+die Frau,woman,personal-information
+der / die Erwachsene,adult,personal-information
+das Kind,child,personal-information
+Was ist…?,What is …?,sentences / questions
+Wo ist …?,Where is …?,sentences / questions
+Wie …?,How …?,sentences / questions
+Wie viel kostet es?,How much is it?,sentences / questions
+Wie lange dauert es?,How long does it take?,sentences / questions
+Gibt es …?,Is there …?,sentences / questions
+Ich hätte gerne …,I would like ...,sentences
+Ich brauche …,I need ...,sentences
+Kein Problem!,No problem!,sentences
+der Supermarkt,supermarket,shopping
+das Geld,cash,shopping
+die Karte (Bankkarte),bank card,shopping
+die Tasche,bag,shopping
+der Tampon,tampon,shopping
+die Binde,(sanitary) pad,shopping
+das Kondom,condom,shopping
+die Zahnbürste,toothbrush,shopping
+die Hilfe,help,shopping
+die Polizei,police,shopping
+das Haus,house,surrounding
+die Wohnung,apartment,surrounding
+das Hotel,hotel,surrounding
+das Museum,museum,surrounding
+der Strand,beach,surrounding
+der Wald,forest,surrounding
+der Berg,mountain,surrounding
+der Park,park,surrounding
+der Fluss,river,surrounding
+das Meer,sea,surrounding
+der See,lake,surrounding
+das Wetter,weather,surrounding
+die Sonne,sun,surrounding
+der Regen,rain,surrounding
+der Schnee,snow,surrounding
+das Gewitter,thunderstorm,surrounding
+das Internet,internet,technology
+das Passwort,password,technology
+der Computer,computer,technology
+die Steckdose,socket,technology
+aufladen,to recharge,technology / verb
+die Zeit,time,time
+der Tag,day,time
+die Woche,week,time
+der Monat,month,time
+das Jahr,year,time
+Montag,Monday,time
+Dienstag,Tuesday,time
+Mittwoch,Wednesday,time
+Donnerstag,Thursday,time
+Freitag,Friday,time
+Samstag,Saturday,time
+Sonntag,Sunday,time
+morgens,in the morning,time
+nachmittags,in the afternoon,time
+abends,in the evening,time
+nachts,at night,time
+früher,earlier,time
+später,later,time
+pünktlich,on time,time
+verspätet,delayed,time
+der Zug,train,transport
+der Bus,bus,transport
+das Auto,car,transport
+die Straßenbahn,tram,transport
+das Taxi,taxi / cab,transport
+das Fahrrad,bicycle,transport
+zu Fuß,on foot,transport
+der Bahnhof,train station,transport
+der Busbahnhof,bus station,transport
+die Haltestelle,stop,transport
+arbeiten,to work,verb
+besuchen,to visit,verb
+bleiben,to stay,verb
+brauchen,to need,verb
+essen,to eat,verb
+fragen,to ask,verb
+geben,to give,verb
+gehen,to go,verb
+haben,to have,verb
+kaufen,to buy,verb / shopping
+können,(I/you/we/they) can,verb
+lernen,to learn,verb
+machen,to make,verb
+nehmen,to take,verb
+sagen,to say,verb
+schreiben,to write,verb
+sehen,to see,verb
+sein,to be,verb
+suchen,to search,verb
+telefonieren,to call,verb
+trinken,to drink,verb
+wissen,to know,verb
+wollen,to want,verb
+zahlen,to pay,verb

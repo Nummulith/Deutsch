@@ -9,14 +9,13 @@ def pr(txt):
 
 print()
 
-subfolder = "/current"
-input  = './cards' + subfolder
-output = './audio' + subfolder
+input  = './current'
+output = './audio'
 
 outputPath = Path(output)
 outputPath.mkdir(exist_ok=True)
 
-tmp_path = f"./audio/tmp.mp3"
+tmp_path = f"{output}/tmp.mp3"
 
 gTTS("вопрос", lang='ru').save(tmp_path)
 q_pre = AudioSegment.from_mp3(tmp_path) - 10

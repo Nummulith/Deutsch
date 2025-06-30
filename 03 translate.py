@@ -1,14 +1,15 @@
 import csv
 import re
 
-dictionary = '.\\doc\\dict.cc\\dict.cc.csv'
 input  = ".\\out\\splitter.csv"
 output = ".\\out\\translate.csv"
+
+dictionary = '.\\doc\\dict.cc\\dict.cc.csv'
 
 with open(input , "r", encoding="utf-8") as infile,\
      open(output, 'w', encoding='utf-8', newline='') as csvout,\
      open(dictionary, "r", encoding='utf-8') as dictfile\
-    :
+:
     dictreader = csv.DictReader(dictfile, delimiter='\t')
 
     reader = csv.DictReader(infile)

@@ -4,13 +4,13 @@ from collections import defaultdict
 # https://github.com/repodiac/german_compound_splitter
 from german_compound_splitter import comp_split
 
+input  = '.\\out\\statistix.csv'
+output = ".\\out\\splitter.csv"
+
 print("-")
 
 dictionary = '.\\doc\\german.dic'
 ahocs = comp_split.read_dictionary_from_file(dictionary)
-
-input  = '.\\out\\statistix.csv'
-output = ".\\out\\splitter.csv"
 
 result_dict = defaultdict(int)
 
@@ -24,8 +24,8 @@ with open(input, encoding='utf-8') as f:
 
         try:
             num = int(row['Num'])
-        except ValueError:
-            continue  # Пропускаем строки с некорректным числом
+        except:
+            num = 1
 
         try:
             dissection = comp_split.dissect(compound, ahocs, make_singular=True)

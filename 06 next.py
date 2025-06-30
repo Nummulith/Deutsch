@@ -1,10 +1,10 @@
 import os
 import csv
 
-# wheres = [".\\cards\\themes", ".\\cards\\lex"]
-wheres = [".\\cards\\test"]
-output_dir = ".\\cards\\current"
-howMany = 50
+wheres = [".\\cards\\themes", ".\\cards\\lex"] # , ".\\cards\\test"
+prefix = "Лексика"
+output_dir = ".\\current"
+howMany = 100
 
 def pr(txt):
     print(f"\r{(txt):<70}", end='', flush=True)
@@ -16,7 +16,6 @@ count_in_file = 0
 total_count = 0
 
 def create_new_writer(file_index):
-    prefix = "Тест"
     filename = os.path.join(output_dir, f"{prefix} {file_index:02}.csv")
     f = open(filename, 'w', encoding='utf-8', newline='')
     writer = csv.writer(f)

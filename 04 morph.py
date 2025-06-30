@@ -19,7 +19,7 @@ with open(output, 'w', encoding='utf-8', newline='') as csvfile:
             word = row['Wort']
             num  = row['Num']
             ru   = row['Ru']
-            print(f"\r{(f'Wort: {word}'):<70}", end='', flush=True)
+            # print(f"\r{(f'Wort: {word}'):<70}", end='', flush=True)
 
             doc = nlp(word)
             for token in doc:
