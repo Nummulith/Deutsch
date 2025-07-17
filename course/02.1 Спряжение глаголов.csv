@@ -1,0 +1,59 @@
+Question,Answer
+~reverse,True
+~forward,False
+
+ich bin,я есть
+du bist,ты есть
+er/sie/es ist,он/она/оно есть
+wir sind,мы есть
+ihr seid,вы есть
+sie sind,они есть
+Sie sind,Вы есть
+
+ich habe,я имею
+du hast,ты имеешь
+er/sie/es hat,он/она/оно имеет
+wir haben,мы имеем
+ihr habt,вы имеете
+sie haben,они имеют
+Sie haben,Вы имеете
+
+ich lerne, я учу
+du lernst, ты учишь
+er/sie/es lernt, он/она/оно учит
+wir lernen, мы учим
+ihr lernt, вы учите (мн.ч.)
+sie lernen, они учат
+Sie lernen, Вы учите
+
+ich mache,я делаю
+du machst,ты делаешь
+"er, sie, es macht","он, она, оно делает"
+wir machen,мы делаем
+ihr macht,вы делаете
+sie machen,они делают
+Sie machen,Вы делаете
+
+ich arbeite,я работаю
+du arbeitest,ты работаешь
+"er, sie, es arbeitet","он, она, оно работает"
+wir arbeiten,мы работаем
+ihr arbeitet,вы работаете
+sie arbeiten,они работают
+Sie arbeiten,Вы работаете
+
+ich tanze,я танцую
+du tanzt,ты танцуешь
+"er, sie, es tanzt","он, она, оно танцует"
+wir tanzen,мы танцуем
+ihr tanzt,вы танцуете
+sie tanzen,они танцуют
+Sie tanzen,Вы танцуете
+
+ich werde sein (haben),я буду (иметь)
+du wirst sein (haben),ты будешь (иметь)
+er/sie/es wird sein (haben),он/она/оно будет (иметь)
+wir werden sein (haben),мы будем (иметь)
+ihr werdet sein (haben),вы будете (иметь)
+sie werden sein (haben),они будут (иметь)
+Sie werden sein (haben),Вы будете (иметь)

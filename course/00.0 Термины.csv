@@ -1,0 +1,23 @@
+Question,Answer
+~reverse,True
+Maskulin, Мужской род
+Feminin, Женский род
+Neutrum, Средний род
+Singular, Единственное число
+Plural, Множественное число
+der Fall,падеж
+Nominativ, Именительный падеж - кто? что? (подлежащее)
+Akkusativ, Винительный падеж - кого? что? (прямое дополнение)
+Dativ, Дательный падеж - кому? чему? (косвенное дополнение)
+Genitiv, Родительный падеж - чей? (притяжательный падеж)
+Präsens, Настоящее
+Präteritum, Прошлое
+Futur, Будущее
+Bestimmter Artikel,Определенный артикль
+Unbestimmter Artikel,Неопределенный артикль
+Possesivpronomen,Притяжательные местоимения
+Fragewörter,Вопросительные предложения
+Negation,Отрицательные предложения
+Modalverben,Модальные глаголы
+Trennbare / untrennbare Präfixe,Отделяемые / неотделяемые приставки
+Imperativ,Повелительное наклонение

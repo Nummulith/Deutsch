@@ -1,0 +1,31 @@
+Question,Answer
+~question_language,de
+~answer_language,de
+"ich, er, sie, es; müssen","ich, er, sie, es muss"
+du; müssen,du musst
+"wir, sie, Sie; müssen","wir, sie, Sie müssen"
+ihr; müssen,ihr müsst
+"ich, er, sie, es; sollen","ich, er, sie, es soll"
+du; sollen,du sollst
+"wir, sie, Sie; sollen","wir, sie, Sie sollen"
+ihr; sollen,ihr sollt
+"ich, er, sie, es; können","ich, er, sie, es kann"
+du; können,du kannst
+"wir, sie, Sie; können","wir, sie, Sie können"
+ihr; können,ihr könnt
+"ich, er, sie, es; dürfen","ich, er, sie, es darf"
+du; dürfen,du darfst
+"wir, sie, Sie; dürfen","wir, sie, Sie dürfen"
+ihr; dürfen,ihr dürft
+"ich, er, sie, es; wollen","ich, er, sie, es will"
+du; wollen,du willst
+"wir, sie, Sie; wollen","wir, sie, Sie wollen"
+ihr; wollen,ihr wollt
+"ich, er, sie, es; mögen", "ich, er, sie, es mag"
+du; mögen, du magst
+"wir, sie, Sie; mögen", "wir, sie, Sie mögen"
+ihr; mögen, ihr mögt
+"ich, er, sie, es; möchten","ich, er, sie, es möchte"
+du; möchten,du möchtest
+"wir, sie, Sie; möchten","wir, sie, Sie möchten"
+ihr; möchten,ihr möchtet

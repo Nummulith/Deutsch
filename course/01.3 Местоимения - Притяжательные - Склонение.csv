@@ -1,0 +1,23 @@
+Question,Answer
+~reverse,True
+~forward,False
+
+mein Tisch,мой стол (Nominativ)
+meine Tasche,моя сумка (Nominativ)
+mein Buch,моя книга (Nominativ)
+meine Bücher,мои книги (Nominativ)
+
+meinen Tisch,мой стол (Akkusativ)
+meine Tasche,мою сумку (Akkusativ)
+mein Buch,мою книгу (Akkusativ)
+meine Bücher,мои книги (Akkusativ)
+
+meinem Tisch,моему столу (Dativ)
+meiner Tasche,моей сумке (Dativ)
+meinem Buch,моей книге (Dativ)
+meinen Büchern,моим книгам (Dativ)
+
+meines Tisches,моего стола (Genitiv)
+meiner Tasche,моей сумки (Genitiv)
+meines Buches,моей книги (Genitiv)
+meiner Bücher,моих книг (Genitiv)
