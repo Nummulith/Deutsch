@@ -1,7 +1,7 @@
 import csv
 
-inputQ = ".\\out\\Question.csv"
-inputA = ".\\out\\Answer.csv"
+inputQ = ".\\out\\Q.csv"
+inputA = ".\\out\\A.csv"
 output = ".\\out\\QA.csv"
 
 with open(inputQ, newline='', encoding='utf-8') as q_file:

@@ -1,7 +1,8 @@
 import csv
 import re
 
-input  = ".\\out\\00 detect.csv"
+# input  = ".\\out\\00 detect.csv"
+input  = ".\\out\\01 statistix.csv"
 output = ".\\out\\03 translate.csv"
 
 dictionary = '.\\doc\\dict.cc\\dict.cc.csv'
@@ -13,7 +14,7 @@ with open(input , "r", encoding="utf-8") as infile,\
     dictreader = csv.DictReader(dictfile, delimiter='\t')
 
     reader = csv.DictReader(infile)
-    words = {row['Wort'].lower():row for row in reader}
+    words = {row['De'].lower():row for row in reader}
     
     writer = csv.writer(csvout)
     writer.writerow(["Wort", "Num", "Ru"])

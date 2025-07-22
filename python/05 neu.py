@@ -1,11 +1,11 @@
 import os
 import csv
 
-input  = ".\\htmlwords\\A1.csv"
-# input  = ".\\out\\04 morph.csv"
+# input  = ".\\htmlwords\\A1.csv"
+input  = ".\\out\\04 morph.csv"
 output = ".\\out\\05 neu.csv"
 
-alreadies = [".\\cards\\lex", ".\\cards\\themes", ".\\cards\\exclude"]
+alreadies = [".\\vokabeln\\lex", ".\\vokabeln\\themes", ".\\vokabeln\\exclude"]
 
 def pr(txt):
     print(f"\r{(txt):<70}", end='', flush=True)
@@ -61,7 +61,7 @@ with open(input, encoding='utf-8') as f:
                         with open(filepath, newline='', encoding='utf-8') as csvfile:
                             reader1 = csv.DictReader(csvfile)
                             for row1 in reader1:
-                                if row1.get("Question").strip() == target_word:
+                                if row1.get("De").strip() == target_word:
                                     # print(f"found: {target_word} in {filename}")
                                     found = True
                     except Exception as e:

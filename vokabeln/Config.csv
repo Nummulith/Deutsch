@@ -1,0 +1,5 @@
+Path,PriorMin,PriorMax,Learned,De,Skip
+.\vokabeln\lex,1,3,9,,
+.\vokabeln\themes,1,1,9,,
+.\vokabeln\exclude,9,9,0,,-
+.\course,9,9,0,Question,-

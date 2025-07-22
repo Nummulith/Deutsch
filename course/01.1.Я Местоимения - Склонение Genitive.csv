@@ -1,43 +1,4 @@
 Question,Answer
-~reverse,True
-~forward,False
-
-ich,я; Nominativ
-mich,меня; Akkusativ
-mir,мне; Dativ
-
-du,ты; Nominativ
-dich,тебя; Akkusativ
-dir,тебе; Dativ
-
-er,он; Nominativ
-ihn,его; Akkusativ
-ihm,ему; Dativ
-
-sie,она; Nominativ
-sie,её; Akkusativ
-ihr,ей; Dativ
-
-es,оно; Nominativ
-es,его(от оно); Akkusativ
-ihm,ему(от оно); Dativ
-
-wir,мы; Nominativ
-uns,нас; Akkusativ
-uns,нам; Dativ
-
-ihr,вы; Nominativ
-euch,вас; Akkusativ
-euch,вам; Dativ
-
-sie,они; Nominativ
-sie,их; Akkusativ
-ihnen,им; Dativ
-
-Sie,Вы; Nominativ
-Sie,Вас; Akkusativ
-Ihnen,Вам; Dativ
-
 ~reverse,False
 ~forward,False
 meiner,мой; Genitiv

@@ -1,4 +1,4 @@
-Question,Answer
+De,Ru
 ~reverse,True
 Wie heißen Sie?,Как Вас зовут?
 Woher kommen Sie?,Откуда Вы?
@@ -22,7 +22,7 @@ Gibt es …?,Is there …?,sentences / questions
 Ich hätte gerne …,I would like ...,sentences
 Ich brauche …,I need ...,sentences
 Kein Problem!,No problem!,sentences
-Hallo!,Hi!,communication
+Hallo!,Привет!
 Guten Tag!,Hello!,communication
 Tschüß!,Goodbye! / Bye!,communication
 Danke!,Thank you!,communication
@@ -37,3 +37,4 @@ Tschüss!,Пока!
 Auf Wiederhören!,Услышимся!
 Achtung!,Внимание!
 Auf Wiedersehen!,До встречи!
+Auf Wiederhören!,Услышимся!
