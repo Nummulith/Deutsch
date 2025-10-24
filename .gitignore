@@ -4,3 +4,5 @@
 /doc
 /current
 /vokabeln/subs
+/source
+*.vsix
