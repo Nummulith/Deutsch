@@ -1,4 +1,5 @@
-Question,Beispiel_masc / Beispiel_fem / Beispiel_neut / Beispiel_pl / Case
+Question,Answer
+~comment,Beispiel_masc / Beispiel_fem / Beispiel_neut / Beispiel_pl / Case
 ~reverse,True
 ~answer_language,de
 mit,mit dem Mann / mit der Frau / mit dem Kind / mit den Freunden (Dativ)

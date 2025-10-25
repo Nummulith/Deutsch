@@ -4,5 +4,8 @@
 /doc
 /current
 /vokabeln/subs
-/source
+/raw
 *.vsix
+/slow
+/python/__pycache__
+source/Dictionary.csv

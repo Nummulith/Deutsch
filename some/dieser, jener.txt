@@ -1,7 +1,0 @@
-🔸 Склонение dieser / jener
-Падеж	Муж. род (der)	Жен. род (die)	Ср. род (das)	Мн. число (die)
-Nominativ	dieser	diese	dieses	diese
-Akkusativ	diesen	diese	dieses	diese
-Dativ	diesem	dieser	diesem	diesen
-Genitiv	dieses	dieser	dieses	dieser
-Для jener – та же схема: jener, jene, jenes и т.д.
