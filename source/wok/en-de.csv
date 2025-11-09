@@ -99,7 +99,6 @@ geradeaus,straight ahead,orientation
 zurück,back,orientation
 der Vorname,first name,personal-information
 der Nachname,last name,personal-information
-die Adresse,address,personal-information
 das Land,country,personal-information
 der Geburtsort,place of birth,personal-information
 das Geburtsdatum,date of birth,personal-information
@@ -130,7 +129,6 @@ die Polizei,police,shopping
 das Haus,house,surrounding
 die Wohnung,apartment,surrounding
 das Hotel,hotel,surrounding
-das Museum,museum,surrounding
 der Strand,beach,surrounding
 der Wald,forest,surrounding
 der Berg,mountain,surrounding

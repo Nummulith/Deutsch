@@ -1,5 +1,6 @@
 import os
 import csv
+import random
 
 def filesFromCfg(config_path):
     with open(config_path, newline='', encoding='utf-8') as f:
@@ -22,12 +23,19 @@ def wordsFromFile(dictionary_file):
             reader = csv.DictReader(f)
             DeKey = "De" if "De" in reader.fieldnames else "Question"
             RuKey = "Ru" if "Ru" in reader.fieldnames else "Answer"
+            reverse = False
             for row in reader:
-                De = row[DeKey]
-                Ru = row[RuKey]
+                De = row[DeKey].strip()
+                Ru = row[RuKey].strip()
                 if De[0] == "~":
+                    if De == "~reverse":
+                        reverse = True
                     continue
+
                 entries[De] = Ru
+                if reverse:
+                    entries[Ru] = De
+
     return entries
 
 def wordsFromCfg(config_path, ex = None, count = None):
@@ -63,3 +71,8 @@ def wordsToFile(words, filename):
             # resRaw = {key: row.get(key, "") for key in header}
             val = [key, row] if isinstance(row, str) else row.values()
             writer.writerow(val)
+
+def randomDict(source):
+    items = list(source.items())
+    random.shuffle(items)
+    return dict(items)

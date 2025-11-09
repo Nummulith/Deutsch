@@ -8,8 +8,6 @@ Gerne!,Охотно! С удовольствием!
 Hallo!,Привет!
 Tschüss!,Пока!
 Willkommen!,Добро пожаловать!
-das Jahr,год
-das Wochenende,выходные
 spät,поздно
 einmal,один раз / однажды
 drei,три
@@ -65,15 +63,12 @@ leben,жить
 lernen,учить
 lieben,любить
 das Mädchen,девочка
-das Restaurant,ресторан
 der Geburtstag,день рождения
 der Junge,мальчик
 der Kopf,голова
-der Kuchen,пирог
 der Lachs,лосось
 der Name,имя
 der Opa,дедушка
-der Ort,место
 der Park,парк {м}
 der Plan,план
 die Oma,бабушка
@@ -82,20 +77,16 @@ die Polizei,полиция
 die Probe,проба / репетиция
 die Puppe,кукла
 bitter,горький
-bunt,пёстрый [состоящий из разных элементов] / многокрасочный / разноцветный / пёстро / цветной [пёстрый]
+bunt,пёстрый
 das Fahrrad,велосипед {м}
 das Fleisch,плоть {ж} [устр.] [книжн.] [тж. перен.] / мясо {с} / мясцо {с} [разг.]
 das Gemüse,овощ {м}
 das Geradeaus,напрямик [разг.] / прямо
 das Internet,интернет {м} / инет {м} [разг.]
-das Medikament,лека́рство {с} / лекарственное средство {с} / лекарственный препарат {м} / медикамент {м}
 das Meer,море {с}
-das Museum,музей {м}
 das Obst,фрукты {мн}
-das Problem,вопрос {м} [проблема] / проблема {ж}
 Das Krankenhaus,больница {ж} / стационар {м}
 abends,по вечерам / вечером
-das Tee,чай {м} / чаёк {м} [уменьш.]
 das Wasser,вода
 der Arm,рука
 der Ausgang,исход {м} [результат] / выходная дверь {ж} / выход {м}
@@ -103,23 +94,17 @@ der Bahnhof,вокзал
 der Eingang,вход {м} / подъезд {м} [вход]
 der Fuß,стопа
 der Salat,салят {м} / салат-латук {м} / салат {м}
-der Schmerzmittel,болеутоляющее {с} / болеутоляющее средство {с} / обезболивающее {с} / обезболивающее средство {с}
 der Schnee,снег {м} / снежок {м} [уменьш. к снег]
 der See,озеро
-der Staat, государство
 der Supermarkt,супермаркет {м} / универсам {м} [универсальный магазин самообслуживания]
 der Vorname,имя {с} [в отличие от фамилии]
 der Wein,вино
-der Wetter,погода {ж}
 der Zug,поезд
-die Adresse,адрес {м}
 die Haltestelle,остановка
 die Hilfe,выручка {ж} [разг.] [помощь] / подмога {ж} [разг.] [помощь] / подспорье {с} [помощь] / помощь {ж}
-die Schmerz,боль
 dumm,глупый 
 dunkel,тёмный 
 frisch,свежий
-früh,рано
 heiß,горячий
 hell,яркий 
 kalt,холодный
@@ -128,28 +113,19 @@ parken,парковать
 scharf,острый
 spazieren,гулять
 später,позже
-studieren,учиться
 süß,сладкий
 warm,тёплый
 Österreich,Австрия
-bei Grün, на зелёный свет
 das Gelb, жёлтый
-das Glas, бокал
 das Grün, зелёный
 das Hähnchen, курочка
-das Kino,кинотеатр
 das Rot, красный
-das Salz,соль
-das Silber, серебро
-das Silvester, канун Нового года
-der Baum,дерево
 der Brief,письмо
 der Gott,бог
 der Krieg,война
 der Mann,мужчина
 der Pass,паспорт
 der Pfeffer,перец
-der Schulhof, школьный двор
 der Sekt, шампанское
 der Wodka, водка
 der Zucker,сахар
@@ -157,18 +133,10 @@ das Gold, золото
 die Apotheke, аптека) 
 die Blume,цветок 
 die Cola, кола
-die Entschuldigung,извинение
-die Erde,Земля
-die Großstadt,большой город
 die Idee,идея
-die Immobilien,недвижимость
-die Lebensmittel,продукты питания
 die Limonade, лимонад
-die Luft,воздух
-die Ordnung,порядок
 die Rasse,раса
 die Sonne,солнце 
-die Stadt,город
 die/das App,приложение
 falsch,неправильно / ложный
 halten,держать / останавливаться
@@ -185,4 +153,7 @@ der Hunger,голод
 erster,первый
 krank,больной
 schwimmen,плавать
-wenn,если / когда
+der Tisch,стол
+die Leute,люди
+die Maus,мышь
+die Uhr,часы
