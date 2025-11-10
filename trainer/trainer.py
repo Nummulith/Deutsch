@@ -161,6 +161,12 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
     def update_view(self):
         self.label_question.setText(self.current_question)
         self.label_answer  .setText(self.current_answer if self.phase == "A" else "")
+
+        palette = self.label_question.palette()
+        palette.setColor(self.label_question.backgroundRole(), ratio2color(timedelta2ratio(self.remembered), True))
+        self.label_question.setAutoFillBackground(True)
+        self.label_question.setPalette(palette)
+
         self.label_info    .setText(f"{self.last.strftime("%d/%m %H:%M")} | {short_timedelta(self.remembered)}")
 
     def keyPressEvent(self, event):
@@ -170,19 +176,21 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         if key == Qt.Key_Escape:
             self.close()
         elif self.phase == "Q":
-            if key == Qt.Key_Enter:
+            if key == Qt.Key_Enter or key == Qt.Key_Return or key == Qt.Key_Right:
                 self.phase = "A"
                 self.update_view()
         elif self.phase == "A":
             ctrl = mod & Qt.ControlModifier
 
-            if ctrl and (key == Qt.Key_Plus or key == Qt.Key_Equal):  # Ctrl + "+"
+            plus  = key == Qt.Key_Plus  or key == Qt.Key_Equal or key == Qt.Key_Up
+            minus = key == Qt.Key_Minus or key == Qt.Key_Down
+            if ctrl and plus:
                 self.result = memoryK * memoryK * memoryK
-            elif ctrl and key == Qt.Key_Minus:                       # Ctrl + "-"
+            elif ctrl and minus:
                 self.result = 1 / (memoryK * memoryK * memoryK)
-            elif key == Qt.Key_Plus or key == Qt.Key_Equal:  # + на разных клавиатурах
+            elif plus:
                 self.result = memoryK
-            elif key == Qt.Key_Minus:
+            elif minus:
                 self.result = 1 / memoryK
 
             if self.result != 1.:
