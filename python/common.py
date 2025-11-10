@@ -2,18 +2,22 @@ import os
 import csv
 import random
 
-def filesFromCfg(config_path):
-    with open(config_path, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        filenames = []
-        for row in reader:
-            Path     = row["Path"]
-            if Path.endswith(".csv"):
-                filenames.append(Path)
-            else:
-                for filename in os.listdir(Path):
-                    if filename.endswith(".csv"):
-                        filenames.append(os.path.join(Path, filename))
+def filesFromFiles(files_path):
+    filenames = []
+    if isinstance(files_path, list):
+        for filename in files_path:
+            filenames += filesFromFiles(filename)
+    elif files_path.endswith(".files"):
+        with open(files_path, newline='', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                filename = row["Path"]
+                filenames += filesFromFiles(filename)
+    elif files_path.endswith(".csv"):
+        filenames += [files_path]
+    else: # folder
+        for filename in os.listdir(files_path):
+            filenames += filesFromFiles(os.path.join(files_path, filename))
     return filenames
 
 def wordsFromFile(dictionary_file):
@@ -25,8 +29,14 @@ def wordsFromFile(dictionary_file):
             RuKey = "Ru" if "Ru" in reader.fieldnames else "Answer"
             reverse = False
             for row in reader:
-                De = row[DeKey].strip()
-                Ru = row[RuKey].strip()
+                De = row[DeKey]
+                if not De: De = ""
+                De = De.strip()
+
+                Ru = row[RuKey]
+                if not Ru: Ru = ""
+                Ru = Ru.strip()
+
                 if De[0] == "~":
                     if De == "~reverse":
                         reverse = True
@@ -38,8 +48,8 @@ def wordsFromFile(dictionary_file):
 
     return entries
 
-def wordsFromCfg(config_path, ex = None, count = None):
-    filenames = filesFromCfg(config_path)
+def wordsFrom(files_path, ex = None, count = None):
+    filenames = filesFromFiles(files_path)
 
     words = {}
     co = 0

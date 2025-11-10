@@ -1,14 +1,11 @@
 De,Ru,Learned
 ~reverse,True
-empfehlen,советовать
 fallen,падать,-
 fangen,ловить
-geben,давать,-
-laufen,"бегать, ходить"
 lesen,читать,-
 nehmen,брать
 stehlen,красть,-
-tragen,носить,-
+tragen,носить
 treffen,встречать,-
 vergessen,забывать,-
 wachsen,расти
@@ -17,30 +14,28 @@ denken,думать,-
 wissen,знать о чём-то
 kennen,быть знакомым
 glauben,верить / считать
-sagen,сказать,-
-fragen,спросить,-
+sagen,говорить
 antworten,отвечать,-
 fühlen,чувствовать,-
 lieben,любить,-
 gehen,идти,-
-kommen,"приходить, приезжать",-
 sehen,видеть,-
 hören,слышать,-
-essen,есть (кушать),-
+essen,есть (принимать пищу)
 trinken,пить,-
 schlafen,спать,-
 arbeiten,работать,-
 leben,жить,-
 singen,петь,-
-malen,рисовать,-
-lernen,учить,-
+malen,рисовать
+lernen,учить [что-нибудь]
 sprechen,говорить,-
 spielen,играть,-
 sitzen,сидеть,-
 kochen,готовить,-
 reparieren,чинить,-
-wohnen,жить (проживать в городе),-
-fahren,ездить,-
+wohnen,жить (проживать в городе)
+fahren,ехать
 tanzen,танцевать,-
 weinen,плакать,-
 machen,делать,-

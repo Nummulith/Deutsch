@@ -1,4 +1,5 @@
 De,Ru
+~reverse,True
 acht,восемь
 achtzehn,восемнадцать
 achtzig,восемьдесят
@@ -30,17 +31,17 @@ die Milliarde,миллиард
 
 mehr,больше,-
 weniger,меньше,-
-gleich,равно / вот-вот,-
+gleich,равный / похожий / вот-вот
 viel,много,-
-wie viel,как много?
+wie viel,как много
 bisschen,немного
 wenig,мало,-
 alles,всё,-
-nichts,ничего,-
-etwas,что-то / немного,-
+nichts,ничего / ничто
+etwas,что-нибудь / немного
 alle,все,-
 jeder,каждый,-
-kein,никакой / нет,-
+kein,никакой / не
 circa,примерно / приблизительно
 
 das Kilogramm,килограмм

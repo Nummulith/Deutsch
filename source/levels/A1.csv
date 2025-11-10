@@ -1,4 +1,5 @@
 De,Ru
+~reverse,True
 ich,я
 wir,мы
 du,ты
@@ -6,7 +7,7 @@ ihr,вы
 er,он
 sie,они
 sie,она
-Sie,Вы
+Sie,Вы(ув)
 es,оно
 mir,мне
 uns,нам
@@ -15,7 +16,7 @@ euch,вам
 ihm,ему
 ihnen,им
 ihr,ей
-Ihnen,Вам
+Ihnen,Вам(ув)
 ihm,ему
 mich,меня
 uns,нам
@@ -24,21 +25,21 @@ euch,вас
 ihn,его
 sie,их
 sie,её
-Sie,Вас
+Sie,Вас(ув)
 es,его
 Hallo!,Привет!
 Vorsicht!,Осторожно!
 Willkommen!,Добро пожаловать!
 Gerne!,Охотно! С удовольствием!
 Bitte!,Пожалуйста!
-Tschüss!,Пока!
+Tschüß!,Пока!
 Danke!,Спасибо!
 Auf Wiederhören!,Услышимся!
 Achtung!,Внимание!
 Auf Wiedersehen!,До встречи!
 die Zeit,время
 die Sekunde,секунда
-das Datum,die Daten / дата / число
+"das Datum, die Daten","дата, число"
 der Moment,момент
 das Jahr,год
 der Morgen,утро
@@ -61,11 +62,11 @@ gerade,прямо сейчас / только что
 nie,никогда
 zurzeit,в этот момент / прямо сейчас
 einmal,один раз / однажды
-jetzt,теперь / сейчас
+jetzt,сейчас
 oft,часто
 schon,уже
 immer,всегда
-seit,с
+seit,(длится) начиная с... (в прошлом),-
 früher,раньше
 spät,поздно
 gestern,вчера
@@ -96,7 +97,7 @@ der März,март
 der November,ноябрь
 der April,апрель
 der Dezember,декабрь
-eins,один
+eins,один [число]
 siebzehn,семнадцать
 zwei,два
 achtzehn,восемнадцать
@@ -148,15 +149,15 @@ grau,серый
 gelb,жёлтый
 blau,синий
 braun,коричневый
-wer,кто?
-warum,почему?
-was,что?
-woher,откуда?
-wo,где?
-wohin,куда?
-wie,как?
-wie viel,как много?
-wann,когда?
+wer,кто
+warum,почему
+was,что
+woher,откуда
+wo,где
+wohin,куда
+wie,как
+wie viel,как много
+wann,когда
 was für ein/eine/einen,что за? какой?
 die Welt,мир
 der Teil,часть
@@ -168,27 +169,24 @@ das Dorf,деревня
 nach links,налево
 die Straße,улица
 nach rechts,направо
-der Platz,место / площадь
+der Platz,площадь / сидение / место
 der Norden,север
-der Ort,место / небольшой городок
+der Ort,место
 der Süden,юг
 der Anfang,начало
 der Westen,запад
 die Mitte,середина
 der Osten,восток
 das Ende,конец
-hier,здесь / тут
 rechts,справа
-da,там / тут
 oben,наверху
 dort,там
 unten,внизу
-daneben,рядом
 unter,под
 draußen,снаружи / на улице
 hinten,сзади
 links,слева
-hinter,находиться позади
+hinter,за / позади
 weg sein,быть не здесь / отсутствовать / уйти
 auf sein,быть открытым
 zu sein,быть закрытым
@@ -199,13 +197,13 @@ müssen,быть должным / обязанным
 sein,быть
 sollen,быть должным / иметь приказ
 werden,становиться
-heißen,зваться / называться
+heißen,называться
 können,мочь / уметь
 brauchen,нуждаться
 wollen,хотеть
 bekommen,получать
 möchten,хотеть
-kriegen,воевать / получать [разг.]
+kriegen,получать / воевать
 dürfen,мочь / иметь право / разрешение
 gehören,принадлежать
 schlafen,спать
@@ -215,15 +213,15 @@ fahren,ехать
 aufstehen,вставать
 fliegen,летать
 liegen,лежать
-kommen,приходить
+kommen,"приходить, приезжать"
 sitzen,сидеть
 tanzen,танцевать
 gehen,идти
 spielen,играть
 alt,старый
-klein,маленький / низкий [о людях]
-neu,новый / новенький
-groß,большой / высокий [о людях]
+klein,маленький
+neu,новый
+groß,большой / взрослый
 jung,молодой
 schön,красивый
 gut,хороший
@@ -231,43 +229,43 @@ kurz,короткий
 schlecht,плохой
 lang,длинный
 normal,нормальный
-hoch,высокий
+hoch,высокий / вверх
 aber,но
 vor,перед
 oder,или
 zwischen,между
-und,и / а
-über,о / над
-ab,от / начиная с
-um,вокруг
-an,у
+und,и
+über,над
+ab,(предлоги) с / от (начиная с - в будущем)
+um,вокруг / в (по часам) / о / из-за
+an,"у, на (вертикальной поверхности)"
 ohne,без
-aus,из
+aus,из / изнутри
 durch,через / сквозь
-in,в
+in,(предлог) в / через (со временем)
 nach,после
-auf,на
-zu,к
+auf,на (горизонтальной поверхности)
+zu,к / слишком
 von,от
-auch,также / тоже
-bis,до
-dann,тогда
-für,за / для
+auch,тоже (подчёркивание; добавление),-
+bis,(предлог) до
+dann,"потом / затем / тогда"
+für,для
 denn,потому что
 gegen,против
 noch,ещё
-bei,при / у
+bei,возле / при / у
 sehr,очень
-vielleicht,может быть
-also,итак
+vielleicht,возможно / может быть
+also,итак / значит
 möglich,возможно / реально / осуществимо
-so,так
-nur,только
+so,так / настолько
+nur,только (ограничение; совет),-
 lieber,лучше / охотнее
 wunderbar,чудесный / чудный
 besser,лучше
 nicht,не
-weiter,дальше / продолжай
+weiter,дальше
 nichts,ничего / ничто
 leider,к сожалению
 das Wetter,погода
@@ -286,7 +284,7 @@ regnen,идёт дождь
 das Kind,ребёнок
 männlich,мужественный / мужской
 der Junge,мальчик
-die Frau,женщина / госпожа
+die Frau,женщина
 das Mädchen,девочка
 die Dame,дама
 der Jugendliche,молодой человек / девушка
@@ -301,9 +299,9 @@ der Gruß,приветствие
 bitten,просить
 (sich) vorstellen,представлять(ся
 die Bitte,просьба
-sagen,сказать / говорить
+sagen,говорить
 danken,благодарить
-sprechen,говорить / беседовать
+sprechen,говорить
 der Dank,благодарность
 fragen,спрашивать
 (sich) entschuldigen,извинять(ся
@@ -325,7 +323,7 @@ buchstabieren,диктовать по буквам
 der Anrufbeantworter,автоответчик
 hören,слышать
 glauben,верить / считать
-sehen,смотреть / видеть
+sehen,видеть
 lustig,весёлый
 schmecken,чувствовать вкус / быть на вкус
 zufrieden,довольный
@@ -363,8 +361,8 @@ der Opa,дедушка
 der Sohn,сын
 der Hund,собака
 fremd,чужой
-beide,оба/обе
-kennen,знать / быть знакомым
+beide,оба
+kennen,быть знакомым
 (sich) treffen,встречать(ся
 kennenlernen,знакомиться
 warten,ждать
@@ -374,9 +372,9 @@ der Bekannte,знакомый
 bleiben,оставаться
 der Freund,друг
 übernachten,переночевать
-gleich,одинаковый / похожий
+gleich,равный / похожий / вот-вот
 mitbringen,приносить с собой
-allein,один/одна / в одиночку
+allein,один / в одиночку
 mitkommen,прийти вместе с кем-либо
 zusammen,вместе
 mitmachen,делать что-то вместе с кем-то
@@ -387,7 +385,7 @@ gratulieren,поздравлять
 die Hochzeit,свадьба
 der Glückwunsch,пожелание счастья / пожелание к празднику
 die Einladung,приглашение
-herzlich,сердечно / от всего сердца
+herzlich,сердечно
 einladen,приглашать
 feiern,праздновать
 der Gast,гость
@@ -399,10 +397,10 @@ der Durst,жажда
 bitter,горький
 der Appetit,аппетит
 frühstücken,завтракать
-kochen,готовить / варить
+kochen,готовить
 das Frühstück,завтрак
-essen,есть / кушать
-das Glas,стакан / стекло
+essen,есть (принимать пищу)
+das Glas,бокал / стекло
 das Essen,еда
 die Flasche,бутылка
 die Bäckerei,пекарня
@@ -414,9 +412,9 @@ das Lebensmittel,продукты питания
 die Butter,сливочное масло
 der Fisch,рыба
 das Ei,яйцо
-das Fleisch,мясо
+das Fleisch,плоть / мясо
 das Brot,хлеб
-das Hähnchen,курица
+das Hähnchen,курочка
 das Brötchen,булочка
 der Schinken,ветчина
 der Kuchen,пирог
@@ -425,7 +423,7 @@ die Pommes frites,картошка фри
 das Salz,соль
 der Reis,рис
 das Obst,фрукты
-das Gemüse,овощи
+das Gemüse,овощ
 der Apfel,яблоко
 die Kartoffel,картофель
 die Banane,банан
@@ -440,9 +438,9 @@ der Kaffee,кофе
 das Bier,пиво
 die Milch,молоко
 der Wein,вино
-die Anzeige,объявление [на бумаге] / заявление [в полицию]
+die Anzeige,объявление / заявление
 mieten,снимать жильё
-wohnen,жить
+wohnen,жить (проживать в городе)
 die Miete,арендная плата
 die Wohnung,квартира
 vermieten,сдавать
@@ -450,7 +448,7 @@ das Apartment,апартаменты
 der Vermieter,арендодатель
 das Haus,дом
 umziehen,переезжать
-der Eingang,вход
+der Eingang,вход / подъезд
 die Dusche,душ
 der Ausgang,выход
 der Balkon,балкон
@@ -459,12 +457,12 @@ die Küche,кухня
 der Stock,этаж
 die Toilette,туалет
 der Aufzug,лифт
-hell,светлый / светло
+hell,яркий / светлый
 die Treppe,лестница
 breit,широкий / широко
 die Ecke,угол
 kaputt,сломанный
-der Raum,комната / помещение
+der Raum,пространство / комната / космос
 reparieren,чинить
 das Zimmer,комната
 die Reparatur,починка / ремонт
@@ -487,22 +485,22 @@ machen,делать
 ausmachen,выключать
 schließen,закрывать
 anmachen,включать
-bringen,приносить / перемещать
-tun,поступать / делать
+bringen,приносить
+tun,делать / поступать
 holen,приносить / доставать
 suchen,искать
 geben,давать
-finden,находить
+finden,находить / считать
 stellen,ставить
 nehmen,брать
 legen,класть
-halten,держать
+halten,держать / останавливаться
 beginnen,начинать
 benutzen,использовать / применять
 aufhören,прекращать
 das Hobby,хобби
 das Kino,кинотеатр
-wandern,ходить в поход / гулять в лесу
+wandern,путешествовать
 lesen,читать
 der Garten,сад
 das Buch,книга
@@ -521,9 +519,9 @@ der Fußball,футбол [Sn.] / футбольный мяч
 gewinnen,выигрывать
 der Bogen,дуга / лук
 der Laden,магазин
-günstig,выгодный по цене / недорогой
+günstig,доступный (по цене)
 das Geschäft,бизнес / магазин
-billig,дешёвый / дешево
+billig,дешёвый
 der Kiosk,киоск
 teuer,дорогой
 geöffnet,открыто / открытый
@@ -535,15 +533,15 @@ zahlen,платить
 das Angebot,предложение
 bezahlen,оплачивать
 der Prospekt,проспект
-die Tasche,сумка
+die Tasche,карман / сумка
 kaufen,покупать
-empfehlen,рекомендовать
+empfehlen,"советовать,рекомендовать"
 einkaufen,делать покупки
 die Größe,размер
 verkaufen,продавать
 die Jacke,куртка
 der Verkäufer,продавец
-die Kleidung,одежда
+die Kleidung,вещи / одежда
 kosten,стоить
 der Schuh,ботинок
 der Preis,цена
@@ -552,7 +550,7 @@ der Ausländer,иностранец
 reisen,путешествовать
 ausländisch,иностранный
 die Reise,путешествие
-das Hotel,отель
+das Hotel,гостиница / отель
 das Reisebüro,бюро путешествий
 die Rezeption,рецепция
 der Reiseführer,гид
@@ -609,7 +607,7 @@ der Kopf,голова
 aussehen,выглядеть
 der Arm,рука
 (sich) anziehen,одевать(ся
-die Hand,ладонь
+die Hand,кисть руки
 (sich) ausziehen,раздевать(ся
 das Bein,нога
 baden,принимать ванну / купаться
@@ -624,7 +622,7 @@ weh tun,делать больно
 das Auge,глаз
 das Fieber,жар
 der Blick,взгляд
-der Arzt,врач
+der Arzt,врач / доктор
 das Gewicht,вес
 der Doktor,доктор
 geboren,рожден(а)
@@ -633,12 +631,12 @@ leben,жить
 tot,мёртвый
 das Leben,жизнь
 der Kindergarten,детский сад
-die Hausaufgabe,домашнее задание
-laut,громкий / громко
+die Hausaufgabe,домашняя работа
+laut,громко
 der Test,тест
 leise,тихий / тихо
 die Prüfung,экзамен
-lernen,учить [что-нибудь] / учиться
+lernen,учить [что-нибудь]
 der Bleistift,простой карандаш
 die Schule,школа
 der Kugelschreiber,шариковая ручка
@@ -647,13 +645,13 @@ das Papier,бумага / документ
 der Schüler,ученик
 schreiben,писать
 der Lehrer,учитель
-wissen,знать
-studieren,учиться в вузе
-leicht,лёгкий / легко
+wissen,знать о чём-то
+studieren,учиться
+leicht,лёгкий
 das Studium,учёба в вузе
-einfach,простой / просто
+einfach,просто
 die Gruppe,группа
-schwer,тяжёлый / тяжело
+schwer,тяжёлый / сложный
 der Student,студент
 die Lösung,решение / ответ [к задаче]
 der Unterricht,занятие
@@ -661,9 +659,9 @@ fertig,готовый / готово
 die Pause,пауза / перерыв
 das Ergebnis,результат
 das Thema,тема
-richtig,правильный / правильно
+richtig,правильный / верный
 die Information,информация
-falsch,неправильный / неправильно
+falsch,неправильный / ложный
 das Beispiel,пример
 der Fehler,ошибка
 zum Beispiel,например
@@ -679,7 +677,7 @@ die Aussage,высказывание
 der Satz,предложение
 bedeuten,означать / значить
 der Text,текст
-der Beruf,профессия
+der Beruf,"род занятий / специальность / профессия"
 der Chef,шеф
 arbeiten,работать
 der Kollege,коллега
@@ -696,7 +694,7 @@ das Gespräch,разговор
 die Praxis,врачебный кабинет
 das Problem,проблема
 die Hausfrau,домохозяйка
-wichtig,важный
+wichtig,важно
 der Hausmann,домохозяин
 der Schluss,конец / завершение
 der Arbeitsplatz,рабочее место
@@ -737,9 +735,9 @@ ausfüllen,заполнять
 das Alter,возраст
 ankreuzen,отметить крестиком
 der Familienstand,семейное положение
-der Name,имя / название
+der Name,имя
 ledig,холостой
-der Vorname,имя
+der Vorname,имя (в отличие от фамилии)
 verheiratet,женат / замужем
 der Familienname,фамилия
 unterschreiben,подписывать

@@ -1,66 +1,65 @@
 De,Ru
-~reverse,True
-die Hauptstadt,столица
-der Park,парк
-das Zentrum,центр
-die Kirche,церковь
-das Schloss,замок
-das Rathaus,ратуша
-die Messe,выставка-ярмарка
-der Zoo,зоопарк
-das Kaufhaus,торговый дом
-das Einkaufszentrum,торговый центр
-der Markt,рынок
-der Flohmarkt,"блошиный рынок, барахолка"
-die Reihe,ряд
-die Kette,"цепь, сеть магазинов"
+"die Hauptstadt, -¨e",столица
+"der Park, -s",парк
+"das Zentrum, die Zentren",центр
+"die Kirche, -n",церковь
+"das Schloss, -¨er",замок
+"das Rathaus, -¨er",ратуша
+"die Messe, -n",выставка-ярмарка
+"der Zoo, -s",зоопарк
+"das Kaufhaus, -¨er",торговый дом
+"das Einkaufszentrum, -zentren",торговый центр
+"der Markt, -¨e",рынок
+"der Flohmarkt, -¨e","блошиный рынок, барахолка"
+"die Reihe, -n",ряд
+"die Kette, -n","цепь, сеть магазинов"
 nass,мокрый
 trocken,сухой
-heiß,горячий
-warm,тёплый
-kühl,прохладный
-kalt,холодный
-dunkel,тёмный
+heiß,"жарко, горячий"
+warm,"тепло, тёплый"
+kühl,"прохладно, прохладный"
+kalt,"холодно, холодный"
+dunkel,"тёмный, темно"
 neblig,туманно
 sonnig,солнечно
 windig,ветрено
-der Himmel,небо
-das Gewitter,непогода
-die Wolke,облако
+"der Himmel, —",небо
+"das Gewitter, —",непогода
+"die Wolke, -n",облако
 bewölkt,облачно
 der Schnee (Sn.),снег
 schneien,идёт снег
-die Natur,природа
-die Landschaft,ландшафт
-der Berg,гора
-die Insel,остров
-der Fluss,река / поток
-der Wald,лес
-die Pflanze,растение
-das Blatt,лист
-die Rose,роза
-die Ruhe,"тишина, покой"
-das Tier,животное / зверь
-der Vogel,птица
-die Katze,кошка
-das Pferd,лошадь
-das Schwein,свинья
-der Motor,мотор
-der Wagen,автомобиль
-der Motorroller,мотороллер
-der Führerschein,водительское удостоверение
+"die Natur, -en",природа
+"die Landschaft, -en",ландшафт
+"der Berg, -e",гора
+"die Insel, -n",остров
+"der Fluss, -¨e",река
+"der Wald, -¨er",лес
+"die Pflanze, -n",растение
+"das Blatt, -¨er",лист
+"die Rose, -n",роза
+die Ruhe (Sn.),"тишина, покой"
+"das Tier, -e","животное, зверь"
+"der Vogel, -¨",птица
+"die Katze, -n",кошка
+"das Pferd, -e",лошадь
+"das Schwein, -e",свинья
+"der Motor, -e",мотор
+"der Wagen, -¨",автомобиль
+"der Motorroller, —",мотороллер
+"der Führerschein, -e",водительское удостоверение
 parken,парковать
-die Garage,гараж
-der Unfall,несчастный случай
-die Werkstatt,автосервис
-der Verkehr,транспорт
-das Verkehrsmittel,транспортное средство
+"die Garage, -n",гараж
+"der Unfall, -¨e",несчастный случай
+"die Werkstatt, -¨en",автосервис
+"der Verkehr, -e",транспорт
+"das Verkehrsmittel, —",транспортное средство
 umsteigen,"пересаживаться, переходить на другую ветку"
-die Verspätung,опоздание
-der Stadtplan,план города
-der Fahrplan,расписание движения
-die Brücke,мост
-die Ampel,светофор
+"die Verspätung, -en",опоздание
+"der Stadtplan, -¨e",план города
+"der Fahrplan, -¨e",расписание движения
+"die Brücke, -n",мост
+"die Ampel, -n",светофор
 dorther,оттуда
 dorthin,туда
 heraus,наружу
@@ -101,66 +100,66 @@ vorher,"перед этим, до этого"
 wieder,снова
 zuerst,"сначала, для начала"
 zuletzt,в завершение
-der Tourist,турист
+"der Tourist, -en",турист
 reservieren,резервировать
 buchen,бронировать
 packen,собирать чемоданы
 einpacken,взять с собой
-der Rucksack,рюкзак
-der Weg,"путь, дорога"
+"der Rucksack, -¨e",рюкзак
+"der Weg, -e","путь, дорога"
 unterwegs sein,быть в пути
-der Flug,полёт
-das Schiff,корабль
+"der Flug, -¨e",полёт
+"das Schiff, -e",корабль
 erreichen,достигать
 verpassen,"пропустить, упустить"
-die Unterkunft,место для ночлега
+"die Unterkunft, -¨e",место для ночлега
 auspacken,распаковывать чемоданы
-der Strand,(морской) берег / пляж
-die Jugendherberge,хостел для молодёжи
+"der Strand, -¨e",пляж
+"die Jugendherberge, -n",хостел для молодёжи
 verreisen,уезжать
-der Rundgang,"прогулка, экскурсия"
-die Fundsache,"найденная вещь, которую кто-то потерял"
-der Umzug,переезд
+"der Rundgang, -¨e","прогулка, экскурсия"
+"die Fundsache, -n","найденная вещь, которую кто-то потерял"
+"der Umzug, -¨e",переезд
 umziehen,переезжать
 einziehen,заезжать в квартиру/дом
-das Stockwerk,этаж
-das Erdgeschoss,первый этаж
-das Wohnzimmer,гостиная
-das Schlafzimmer,спальня
-der Keller,подвал
-die Heizung,отопление
-das Fenster,окно
-die Lampe,лампа
-der Stuhl,стул
-die Tür,дверь
+"das Stockwerk, -e",этаж
+"das Erdgeschoss, -e",первый этаж
+"das Wohnzimmer, —",гостиная
+"das Schlafzimmer, —",спальня
+"der Keller, —",подвал
+"die Heizung, -en",отопление
+"das Fenster, —",окно
+"die Lampe, -n",лампа
+"der Stuhl, -¨e",стул
+"die Tür, -en",дверь
 renovieren,делать ремонт
-der Nachbar,сосед
-der Haushalt,домашнее хозяйство
-das Mittel,средство
-die Reinigung,"уборка, чистка"
+"der Nachbar, -n",сосед
+"der Haushalt, -e",домашнее хозяйство
+"das Mittel, —",средство
+"die Reinigung, -en","уборка, чистка"
 putzen,"чистить, мыть, убираться"
 aufräumen,убираться
-die Seife,мыло
-die Wäsche,бельё
-das Handtuch,полотенце
-der Schirm,"ширма, заграждение"
-der Kalender,календарь
-das Ding,вещь / предмет
-die Sache,"вещь, дело"
-das Geschirr,посуда
-der Löffel,ложка
-das Messer,нож
-die Gabel,вилка
-die Tasse,чашка
-der Teller,тарелка
-der Topf,"кастрюля, горшок"
-die Schere,ножницы
-der Müll,мусор
+"die Seife, -n",мыло
+"die Wäsche, -n",бельё
+"das Handtuch, -¨er",полотенце
+"der Schirm, -e","ширма, заграждение"
+"der Kalender, —",календарь
+"das Ding, -e","вещь, предмет"
+"die Sache, -n","вещь, предмет"
+"das Geschirr, -e",посуда
+"der Löffel, —",ложка
+"das Messer, —",нож
+"die Gabel, -n",вилка
+"die Tasse, -n",чашка
+"der Teller, —",тарелка
+"der Topf, -¨e","кастрюля, горшок"
+"die Schere, -n",ножницы
+der Müll (Sn.),мусор
 schneiden,резать
 sich schneiden,порезаться
 backen,печь
 braten,жарить
-das Mittagessen,обед
+"das Mittagessen, —",обед
 "das Rezept, -e",рецепт
 "das Gericht, -e","суд, блюдо"
 "die Portion, -en",порция
@@ -226,7 +225,7 @@ liefern,доставлять
 organisieren,организовывать
 schaffen,справляться / создавать
 "die Mode, -n","мода, одежда"
-tragen,носить
+tragen,"носить [одежду] , нести [груз]"
 "das T-Shirt, -s",футболка
 "die Bluse, -n",блузка
 "das Hemd, -e",рубашка
@@ -369,7 +368,7 @@ singen,петь
 "der Fotoapparat, -e",фотоаппарат
 fotografieren,фотографировать
 zeichnen,"рисовать [карандашом], чертить"
-malen,рисовать
+malen,рисовать красками
 basteln,мастерить
 sammeln,"собирать, коллекционировать"
 spazieren gehen,идти гулять
@@ -594,19 +593,23 @@ deshalb,поэтому
 doch,"всё-таки да(опровержение отрицания)"
 anders,иначе
 besonders,особенно
-die Band,музыкальная группа
-das Band,лента
-der Band,том
-das Gehalt,зарплата
-der Gehalt,содержимое
-die See,море
-der See,озеро
+"die Band, -s",музыкальная группа
+"das Band, -¨er",лента
+"der Band, -¨e",том
+"das Gehalt, -¨er",зарплата
+"der Gehalt, -e",содержимое
+"die See, -n",море
+"der See, -n",озеро
 dass,что (союз)
 weil,потому что
 wenn,если / когда
 als,по сравнению с
 auf jeden Fall,в любом случае
 auf keinen Fall,ни в коем случае
-der Bescheid,решение / ответ
+"der Bescheid, -e",решение
+den Bescheid bekommen,узнать о решении
+den Bescheid geben/sagen,дать знать о чём-либо
 recht haben,быть правым
-der Vorschlag,предложение
+"der Vorschlag, -¨e",предложение
+einen Vorschlag haben,иметь предложение
+einen Vorschlag machen,"сделать предложение"

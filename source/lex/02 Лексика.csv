@@ -1,7 +1,7 @@
 De,Ru,Learned
 ~reverse,True
 wichtig,важно
-die Farbe,краска
+die Farbe,краска / цвет
 schwarz,чёрный
 rot,красный
 blau,синий
@@ -26,7 +26,7 @@ der Schmerzmittel,обезболивающее
 das Medikament,лекарство
 die Schmerz,боль
 rücken,ворочать / сдвигать с места
-der Fuß,нога
+der Fuß,стопа
 der Bauch,живот
 der Bein,нога (выше ступни)
 die Hand,кисть руки
@@ -40,7 +40,7 @@ das Geradeaus,прямо
 der Vorname,имя (в отличие от фамилии)
 der Nachname,фамилия
 die Adresse,адрес
-der Beruf,"род занятий / специальность
+der Beruf,"род занятий / специальность / профессия"
 die Erwachsene,взрослые
 der Supermarkt,супермаркет
 die Tasche,карман / сумка
@@ -62,17 +62,17 @@ morgens,утром
 nachmittags,после полудня
 abends,по вечерам / вечером
 nachts,ночью / по ночам
-früher,прежде / ранее / раньше
+früher,раньше
 später,позже
 der Zug,поезд
 der Bus,автобус
 das Fahrrad,велосипед
 der Fuß,стопа
 der Bahnhof,вокзал
-die Haltestelle,остановка
+die Haltestelle,остановка общественного транспорта
 besuchen,посещать
-zahlen,платить / цифры
-toll,отлично
+zahlen,платить
+toll,отлично / класс!
 der Löffel,ложка
 die Gabel,вилка
 trennen,отдельно / порознь

@@ -1,19 +1,22 @@
-import sys
-import os
+# from pyinstrument import Profiler
+
 import math
 from datetime import datetime, timedelta
 
 from PyQt5 import QtWidgets, uic, QtGui
 from PyQt5.QtCore import Qt, QRectF
 
+import sys
+import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../python/'))) # Добавляем в sys.path путь к папке python
-from common import wordsFromCfg, randomDict
+from common import wordsFrom, randomDict
 from common_db import set_value, get_value
 
-theme = "course"
-# CFG = f"./source/{theme}.files"
-CFG = f"./course/{theme}.files"
-DB  = f"./trainer/{theme}.db"
+THEME = "lex"
+FILES = f"./source/{THEME}.files"
+# THEME = "course"
+# FILES = f"./course/{THEME}.files"
+DB  = f"./trainer/{THEME}.db"
 
 memoryK = 2.5
 
@@ -63,6 +66,8 @@ class DiagramWidget(QtWidgets.QWidget):
         # вычисляем размер квадрата
         size = min(w / cols, h / rows)
 
+        now = datetime.now()
+
         # если есть "лишнее" пространство — не центрируем, просто обрезаем
         for i, q in enumerate(words):
             col = i % cols
@@ -71,8 +76,9 @@ class DiagramWidget(QtWidgets.QWidget):
             y = row * size
             if y >= h:  # за границей формы — не рисуем
                 break
-            ratio = self.window.ratios[q]
-            qp.fillRect(QRectF(x, y, size, size), ratio2color(ratio))
+            ratio  = self.window.ratios [q]
+            expire = self.window.expires[q]
+            qp.fillRect(QRectF(x, y, size, size), ratio2color(ratio, expire < now))
 
         qp.end()
 
@@ -86,12 +92,13 @@ def timedelta2ratio(td: timedelta):
     ratio = math.log1p(total_seconds) / math.log1p(max_seconds)
     return min(ratio, 1.0)
 
-def ratio2color(ratio):
+def ratio2color(ratio, pale):
     # ratio: 0.0 (начало) → 1.0 (конец)
     # HSV: hue = 0 (красный) → 270 (фиолетовый)
-    hue = int(360 * ratio)  # можно сделать 360, если хочешь полный круг
-    saturation = 255
+    hue = int(360 * (ratio if ratio <= 1. else 1.))
+    saturation = 255 if not pale else 50
     value = 255
+
     return QtGui.QColor.fromHsv(hue, saturation, value)
 
 class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui"))[0]):
@@ -99,15 +106,21 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         super().__init__()
         self.setupUi(self)
 
-        self.words = randomDict(wordsFromCfg(CFG))
+        self.words = randomDict(wordsFrom(FILES))
 
-        self.ratios = {}
+        now = datetime.now()
+
+        self.ratios  = {}
+        self.expires = {}
         for i, (q, a) in enumerate(self.words.items()):
             print(".", end="", flush=True)
             word_data = get_value(DB, q)
             remembered = word_data.get("remembered") if word_data else timedelta(0)
-            self.ratios[q] = timedelta2ratio(remembered)
+            last       = word_data.get("last")       if word_data else now
+            self.expires[q] = last + remembered
+            self.ratios [q] = timedelta2ratio(remembered)
         print("!")
+        print(len(self.words), "words loaded")
         self.reindex()
 
         self.diagram = DiagramWidget(self)
@@ -123,14 +136,15 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         self.current_question = None
         self.current_answer   = None
 
+        now = datetime.now()
         for q, a in self.words.items():
+            if self.expires[q] > now:
+                continue
+
             def_val = {"last": datetime.now(), "remembered": timedelta(0)}
             word_data = get_value(DB, q, def_val)
             self.last       = word_data.get("last")
             self.remembered = word_data.get("remembered")
-
-            if self.last + self.remembered > datetime.now():
-                continue
 
             self.current_question = q
             self.current_answer   = a
@@ -172,9 +186,16 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
                 self.result = 1 / memoryK
 
             if self.result != 1.:
+
+                # profiler = Profiler()
+                # profiler.start()
+
                 self.store_result()
                 self.draw_diagram()
                 self.new_word()
+
+                # profiler.stop()
+                # profiler.open_in_browser()
 
     def store_result(self):
         if self.remembered == timedelta(0):
@@ -182,9 +203,12 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
         self.remembered *= self.result
 
-        set_value(DB, self.current_question, {"last": datetime.now(), "remembered": self.remembered})
+        now = datetime.now()
+        set_value(DB, self.current_question, {"last": now, "remembered": self.remembered})
 
-        self.ratios[self.current_question] = timedelta2ratio(self.remembered)
+        self.expires[self.current_question] = now + self.remembered
+        self.ratios [self.current_question] = timedelta2ratio(self.remembered)
+
         self.reindex()
 
     def draw_diagram(self):

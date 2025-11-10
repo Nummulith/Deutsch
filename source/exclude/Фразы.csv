@@ -1,9 +1,9 @@
 De,Ru
 ~reverse,True
-Wie heißen Sie?,Как Вас зовут?
-Woher kommen Sie?,Откуда Вы?
+Wie heißen Sie?,Как Вас(ув) зовут?
+Woher kommen Sie?,Откуда Вы(ув)?
 Ich verstehe nicht,я не понимаю
-Sprechen Sie Russisch?,Вы говорите по-русски?
+Sprechen Sie Russisch?,Вы(ув) говорите по-русски?
 Ich spreche ein bisschen Deutsch,я немного говорю по-немецки
 Ich lerne Deutsch,я учу немецкий
 Guten Tag,добрый день
@@ -23,10 +23,10 @@ Ich hätte gerne …,I would like ...,sentences
 Ich brauche …,I need ...,sentences
 Kein Problem!,No problem!,sentences
 Hallo!,Привет!
-Guten Tag!,Hello!,communication
-Tschüß!,Goodbye! / Bye!,communication
-Danke!,Thank you!,communication
-Bitte!,Please!,communication
+Guten Tag,добрый день
+Tschüß!,Пока!
+Danke!,Спасибо!
+Bitte!,Пожалуйста!
 Entschuldigung!,Sorry!,communication
 Stopp!,Stop!,communication
 Prost,Cheers,food
