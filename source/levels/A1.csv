@@ -54,11 +54,11 @@ der Abend,вечер
 die Minute,минута
 die Nacht,ночь
 anfangen,начинать / начинаться
-sofort,сейчас же
+sofort,сейчас же / немедленно
 dauern,длиться
 heute,сегодня
 enden,заканчивать / оканчиваться
-gerade,прямо сейчас / только что
+gerade,прямо / сейчас / только что
 nie,никогда
 zurzeit,в этот момент / прямо сейчас
 einmal,один раз / однажды
@@ -251,7 +251,7 @@ auch,тоже (подчёркивание; добавление),-
 bis,(предлог) до
 dann,"потом / затем / тогда"
 für,для
-denn,потому что
+denn,потому что / ведь
 gegen,против
 noch,ещё
 bei,возле / при / у
@@ -614,7 +614,7 @@ baden,принимать ванну / купаться
 der Fuß,стопа
 (sich) duschen,мыть(ся) в душе
 der Bauch,живот
-(sich) waschen,мыть(ся
+sich waschen,мыться
 das Haar,волос
 krank,больной
 der Mund,рот
@@ -671,13 +671,13 @@ das Praktikum,практика [после учёбы]
 die Aufgabe,задание
 der Kurs,курс
 der Buchstabe,буква
-die Sprache,язык
+die Sprache,речь / язык
 das Wort,слово
 die Aussage,высказывание
 der Satz,предложение
 bedeuten,означать / значить
 der Text,текст
-der Beruf,"род занятий / специальность / профессия"
+der Beruf,"род занятий / профессия"
 der Chef,шеф
 arbeiten,работать
 der Kollege,коллега
@@ -720,7 +720,7 @@ pünktlich,вовремя
 der Pass,паспорт
 die Nummer,номер
 die Papiere,документы
-(sich) anmelden,зарегистрировать(ся) / записать(ся
+(sich) anmelden,зарегистрировать(ся)
 gültig,действительный / актуальный
 die Anmeldung,регистрация
 die Ordnung,порядок
