@@ -20,7 +20,7 @@ DB  = f"./trainer/{THEME}.db"
 
 MEMORYUP   = 2.5
 MEMORYDOWN = 3.0
-WINRATIO = 0.5
+WINRATIO = 0.6
 
 def ChangeExt(path, new_ext):
     base, _ = os.path.splitext(path)
