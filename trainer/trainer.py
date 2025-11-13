@@ -151,6 +151,11 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         if self.filesCur == self.filesMax:
             return
 
+        # for q, exp in self.expires.items():
+        #     if exp <= now:
+        #         allExpired = False
+        #         break
+
         now = datetime.now()
         for filename, _ in self.files.items():
             if self.files[filename]:
@@ -262,6 +267,7 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
                 # profiler.start()
 
                 self.store_result()
+                self.checkForNewFile()
                 self.draw_diagram()
                 self.new_word()
 
@@ -288,9 +294,16 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
         self.reindex()
 
-        if self.ratioCur / self.ratioMax >= WINRATIO:
-            self.newFile()
+    def checkForNewFile(self):
+        allExpired = True
+        now = datetime.now()
+        for q, exp in self.expires.items():
+            if exp <= now:
+                allExpired = False
+                break
 
+        if allExpired or self.ratioCur / self.ratioMax >= WINRATIO:
+            self.newFile()
 
     def draw_diagram(self):
         self.diagram.update()

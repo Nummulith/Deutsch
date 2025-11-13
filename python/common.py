@@ -20,13 +20,14 @@ def filesFromFiles(files_path):
             filenames += filesFromFiles(os.path.join(files_path, filename))
     return filenames
 
-def wordsFromFile(dictionary_file):
+def wordsFromFile(filename):
     entries = {}
-    if os.path.exists(dictionary_file):
-        with open(dictionary_file, mode='r', encoding='utf-8') as f:
+    if os.path.exists(filename):
+        with open(filename, mode='r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             DeKey = "De" if "De" in reader.fieldnames else "Question"
             RuKey = "Ru" if "Ru" in reader.fieldnames else "Answer"
+            forward = True
             reverse = False
             for row in reader:
                 De = row[DeKey]
@@ -38,12 +39,20 @@ def wordsFromFile(dictionary_file):
                 Ru = Ru.strip()
 
                 if De[0] == "~":
-                    if De == "~reverse":
-                        reverse = True
+                    if De == "~forward":
+                        forward = Ru.lower() == "true"
+                    elif De == "~reverse":
+                        reverse = Ru.lower() == "true"
                     continue
 
-                entries[De] = Ru
+                if forward:
+                    if De in entries and Ru != entries[De]:
+                        print(f"Duplicate word <{De}> inside {filename} : {Ru} / {entries[De]}")
+                    entries[De] = Ru
+
                 if reverse:
+                    if Ru in entries and De != entries[Ru]:
+                        print(f"Duplicate word <{Ru}> inside {filename} : {De} / {entries[Ru]}")
                     entries[Ru] = De
 
     return entries

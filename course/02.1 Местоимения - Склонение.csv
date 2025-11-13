@@ -2,38 +2,38 @@ Question,Answer
 ~reverse,True
 ~forward,False
 
-ich,я; Nominativ
-mich,меня; Akkusativ
-mir,мне; Dativ
+ich,я; Nom
+mich,меня; Akk
+mir,мне; Dat
 
-du,ты; Nominativ
-dich,тебя; Akkusativ
-dir,тебе; Dativ
+du,ты; Nom
+dich,тебя; Akk
+dir,тебе; Dat
 
-er,он; Nominativ
-ihn,его; Akkusativ
-ihm,ему; Dativ
+er,он; Nom
+ihn,его; Akk
+ihm,ему; Dat
 
-sie,она; Nominativ
-sie,её; Akkusativ
-ihr,ей; Dativ
+sie,она; Nom
+sie,её; Akk
+ihr,ей; Dat
 
-es,оно; Nominativ
-es,его(от оно); Akkusativ
-ihm,ему(от оно); Dativ
+es,оно; Nom
+es,его(от оно); Akk
+ihm,ему(от оно); Dat
 
-wir,мы; Nominativ
-uns,нас; Akkusativ
-uns,нам; Dativ
+wir,мы; Nom
+uns,нас; Akk
+uns,нам; Dat
 
-ihr,вы; Nominativ
-euch,вас; Akkusativ
-euch,вам; Dativ
+ihr,вы; Nom
+euch,вас; Akk
+euch,вам; Dat
 
-sie,они; Nominativ
-sie,их; Akkusativ
-ihnen,им; Dativ
+sie,они; Nom
+sie,их; Akk
+ihnen,им; Dat
 
-Sie,Вы(ув); Nominativ
-Sie,Вас(ув); Akkusativ
-Ihnen,Вам(ув); Dativ
+Sie,Вы(ув); Nom
+Sie,Вас(ув); Akk
+Ihnen,Вам(ув); Dat
