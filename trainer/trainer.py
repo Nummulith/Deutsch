@@ -12,10 +12,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../pyth
 from common import wordsFrom, randomDict, filesFromFiles, wordsFromFile
 from common_db import set_value, get_value
 
-THEME = "lex"
-FILES = f"./source/{THEME}.files"
-# THEME = "course"
-# FILES = f"./course/{THEME}.files"
+# THEME = "lex"
+# FILES = f"./source/{THEME}.files"
+THEME = "course"
+FILES = f"./course/{THEME}.files"
 DB  = f"./trainer/{THEME}.db"
 
 MEMORYUP   = 2.5
