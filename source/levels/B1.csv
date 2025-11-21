@@ -186,7 +186,6 @@ senden,отправлять
 "die Wand, -¨e",стена [внутренняя]
 "das Dach, -¨er",крыша
 "die Decke, -n",одеяло; потолок
-"die Etage, -n",этаж
 "das Treppenhaus, -¨er",лестничная площадка
 "die Leiter, -n",лестница [приставная]
 "die Stufe, -n",ступень
@@ -443,7 +442,6 @@ zwingen,"вынуждать, принуждать"
 transportieren,транспортировать
 "die Strecke, -n",расстояние; маршрут
 "die Station, -en",станция
-"der Halt, -e",остановка транспорта
 "die Kabine, -n",кабина
 "der Sitz, -e","место [для сидения], кресло в машине/транспорте"
 "das Kraftfahrzeug, -e","автомобиль, машина"
@@ -594,8 +592,8 @@ das Heimweh,тоска по родине
 "die Mappe, -n",папка для документов
 "das Dokument, -e",документ
 "die Kopie, -n",копия
-"das Datum, die Daten","дата, число"
-die Daten (Pl.),"данные [например, личные]"
+das Datum,"дата, число"
+die Daten,"данные [например, личные]"
 die Personalien (Pl.),"личные данные [ФИО, номер телефона и т. д.]"
 "das Geschlecht, -er",пол [человека]
 "der Wohnort, -e",город проживания
@@ -1424,7 +1422,7 @@ aller,самый
 ander,другой
 eigen,собственный
 einzel,"розничный, единственный"
-gesamt,"вместе, в сумме, общий"
+gesamt,целиком
 groß,"оптовый, старший"
 miss,"приставка, выражающая неудачу"
 sonder,"специальный, особенный"

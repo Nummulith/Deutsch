@@ -7,7 +7,7 @@ rot,красный
 blau,синий
 grün,зелёный
 gelb,жёлтый
-die Rechnung,"счёт"
+die Rechnung,счёт (документ)
 die Speisekarte,меню
 die Vorspeise,закуска
 die Hauptspeise,основное блюдо
@@ -19,7 +19,7 @@ das Obst,фрукты
 das Gemüse,овощ
 die Nuss,орех
 der Kaffee,кофе
-das Tee,чай
+der Tee,чай
 der Wein,вино
 Das Krankenhaus,больница
 der Schmerzmittel,обезболивающее
@@ -48,14 +48,14 @@ das Museum,музей
 der Berg,гора
 das Meer,море
 der See,озеро
-der Wetter,погода
+das Wetter,погода
 der Regen,дождь
 der Schnee,снег
 der Gewitter,гроза
 das Internet,интернет
 der Passwort,пароль
-die Vorsicht,бдительность / осторожность
-aufladen,грузить / зарядить [электричеством]
+die Vorsicht,осторожность
+aufladen,грузить / заряжать[электр.]
 morgens,утром
 nachmittags,после полудня
 abends,по вечерам / вечером
@@ -67,7 +67,7 @@ der Bus,автобус
 das Fahrrad,велосипед
 der Fuß,стопа
 der Bahnhof,вокзал
-die Haltestelle,остановка общественного транспорта
+die Haltestelle,остановка транспорта
 besuchen,посещать
 zahlen,платить
 toll,отлично / класс!

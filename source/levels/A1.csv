@@ -1,32 +1,5 @@
 De,Ru
 ~reverse,True
-ich,я
-wir,мы
-du,ты
-ihr,вы
-er,он
-sie,они
-sie,она
-Sie,Вы(ув)
-es,оно
-mir,мне
-uns,нам
-dir,тебе
-euch,вам
-ihm,ему
-ihnen,им
-ihr,ей
-Ihnen,Вам(ув)
-ihm,ему
-mich,меня
-uns,нам
-dich,тебя
-euch,вас
-ihn,его
-sie,их
-sie,её
-Sie,Вас(ув)
-es,его
 Hallo!,Привет!
 Vorsicht!,Осторожно!
 Willkommen!,Добро пожаловать!
@@ -39,7 +12,7 @@ Achtung!,Внимание!
 Auf Wiedersehen!,До встречи!
 die Zeit,время
 die Sekunde,секунда
-"das Datum, die Daten","дата, число"
+das Datum,"дата, число"
 der Moment,момент
 das Jahr,год
 der Morgen,утро
@@ -66,7 +39,7 @@ jetzt,сейчас
 oft,часто
 schon,уже
 immer,всегда
-seit,(длится) начиная с... (в прошлом),-
+seit,(врем)начиная с(прошл.)
 früher,раньше
 spät,поздно
 gestern,вчера
@@ -202,7 +175,6 @@ können,мочь / уметь
 brauchen,нуждаться
 wollen,хотеть
 bekommen,получать
-möchten,хотеть
 kriegen,получать / воевать
 dürfen,мочь / иметь право / разрешение
 gehören,принадлежать
@@ -236,19 +208,19 @@ oder,или
 zwischen,между
 und,и
 über,над
-ab,(предлоги) с / от (начиная с - в будущем)
-um,вокруг / в (по часам) / о / из-за
-an,"у, на (вертикальной поверхности)"
+ab,(врем)начиная с(будущ)
+um,вокруг/во(врем)/о/из-за
+an,"у, на (верт. пов.)"
 ohne,без
 aus,из / изнутри
 durch,через / сквозь
-in,(предлог) в / через (со временем)
+in,(прдл) в/через (время)
 nach,после
-auf,на (горизонтальной поверхности)
+auf,на (гориз. пов.)
 zu,к / слишком
 von,от
-auch,тоже (подчёркивание; добавление),-
-bis,(предлог) до
+auch,тоже (добавление)
+bis,(прдл) до
 dann,"потом / затем / тогда"
 für,для
 denn,потому что / ведь
@@ -260,7 +232,7 @@ vielleicht,возможно / может быть
 also,итак / значит
 möglich,возможно / реально / осуществимо
 so,так / настолько
-nur,только (ограничение; совет),-
+nur,только (огранич.; совет)
 lieber,лучше / охотнее
 wunderbar,чудесный / чудный
 besser,лучше
@@ -298,7 +270,7 @@ der Gruß,приветствие
 bitten,просить
 (sich) vorstellen,представлять(ся
 die Bitte,просьба
-sagen,говорить
+sagen,сказать
 danken,благодарить
 sprechen,говорить
 der Dank,благодарность
@@ -354,9 +326,9 @@ die Großmutter,бабушка
 der Vater,отец
 der Großvater,дедушка
 die Eltern,родители
-die Oma,бабушка
+die Oma,бабуля
 das Baby,младенец
-der Opa,дедушка
+der Opa,дедуля
 der Sohn,сын
 der Hund,собака
 fremd,чужой
@@ -407,7 +379,6 @@ das Restaurant,ресторан
 das Café,кафе
 die Speisekarte,меню
 das Lokal,кафе / забегаловка
-das Lebensmittel,продукты питания
 die Butter,сливочное масло
 der Fisch,рыба
 das Ei,яйцо
@@ -453,7 +424,6 @@ der Ausgang,выход
 der Balkon,балкон
 die Halle,зал
 die Küche,кухня
-der Stock,этаж
 die Toilette,туалет
 der Aufzug,лифт
 hell,яркий / светлый
@@ -499,7 +469,6 @@ benutzen,использовать / применять
 aufhören,прекращать
 das Hobby,хобби
 das Kino,кинотеатр
-wandern,путешествовать
 lesen,читать
 der Garten,сад
 das Buch,книга
@@ -529,7 +498,7 @@ geschlossen,закрыто / закрытый
 die Kasse,касса
 anbieten,предлагать
 zahlen,платить
-das Angebot,предложение
+das Angebot,предложение (оффер)
 bezahlen,оплачивать
 der Prospekt,проспект
 die Tasche,карман / сумка
@@ -547,6 +516,7 @@ der Preis,цена
 die Heimat,родина
 der Ausländer,иностранец
 reisen,путешествовать
+wandern,ходить в пеший поход
 ausländisch,иностранный
 die Reise,путешествие
 das Hotel,гостиница / отель
@@ -571,7 +541,7 @@ die Eile,спешка
 die Ankunft,прибытие
 die Sehenswürdigkeit,достопримечательность
 das Ausland,заграница
-besichtigen,посещать
+besichtigen,осматривать
 das Auto,машина
 das Fahrrad,велосипед
 die Autobahn,скоростная трасса
@@ -582,7 +552,7 @@ der Fahrer,водитель
 die Fahrkarte,проездной билет
 der Bus,автобус
 das Ticket,билет
-die Haltestelle,остановка общественного транспорта
+die Haltestelle,остановка транспорта
 einsteigen,входить / садиться
 die Bahn,железная дорога
 aussteigen,выходить
@@ -641,7 +611,7 @@ die Schule,школа
 der Kugelschreiber,шариковая ручка
 die Klasse,класс
 das Papier,бумага / документ
-der Schüler,ученик
+der Schüler,ученик / школьник
 schreiben,писать
 der Lehrer,учитель
 wissen,знать о чём-то
@@ -673,7 +643,7 @@ der Buchstabe,буква
 die Sprache,речь / язык
 das Wort,слово
 die Aussage,высказывание
-der Satz,предложение
+der Satz,предложение (язык)
 bedeuten,означать / значить
 der Text,текст
 der Beruf,"род занятий / профессия"
@@ -682,7 +652,6 @@ arbeiten,работать
 der Kollege,коллега
 die Arbeit,работа
 der Kunde,клиент
-der Job,работа
 die Anrede,обращение / официальная речь
 arbeitslos,безработный
 die Ansage,объявление / оповещение о чём-либо
@@ -738,17 +707,15 @@ der Name,имя
 ledig,холостой
 der Vorname,имя (в отличие от фамилии)
 verheiratet,женат / замужем
-der Familienname,фамилия
 unterschreiben,подписывать
 das Geburtsjahr,год рождения
 die Unterschrift,подпись
 der Geburtstag,день рождения
-die Bank,скамья
-das Konto,счёт
-die Bank,банк
+die Bank,скамья / банк
+das Konto,счёт (учетная запись)
 die Kreditkarte,кредитная карта
 das Geld,деньги
-die Rechnung,счёт
+die Rechnung,счёт (документ)
 bar,наличные
 überweisen,переводить
 die Post,почта

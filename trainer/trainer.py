@@ -10,17 +10,19 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../python/'))) # Добавляем в sys.path путь к папке python
 from common import wordsFrom, randomDict, filesFromFiles, wordsFromFile
-from common_db import set_value, get_value
+from common_db import get_all, set_value, get_value
 
-# THEME = "lex"
-# FILES = f"./source/{THEME}.files"
-THEME = "course"
-FILES = f"./course/{THEME}.files"
+THEME = "lex"
+FILES = f"./source/{THEME}.files"
 DB  = f"./trainer/{THEME}.db"
+
+# THEME = "course"
+# FILES = f"./course/{THEME}.files"
+# DB  = f"./trainer/{THEME}.db"
 
 MEMORYUP   = 2.5
 MEMORYDOWN = 3.0
-WINRATIO = 0.6
+WINRATIO   = 0.6
 
 def ChangeExt(path, new_ext):
     base, _ = os.path.splitext(path)
@@ -140,12 +142,25 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         self.words, self.ratios, self.expires = {}, {}, {}
         self.filesCur, self.ratioMax, self.ratioCur = 0., 0., 0.
 
+        self.DB_cache = get_all(DB)
+
         # print("\r\n\r", end="");
         print(".")
         self.newFile()
 
         self.phase = "Q"
         self.new_word()
+
+    def get_cached(self, q, def_last = None, def_remembered = None):
+        def_val = {"last": def_last, "remembered": def_remembered}
+        # val = get_value(DB, q, def_val)
+        val = self.DB_cache.get(q, def_val)
+        return val["last"], val["remembered"]
+        
+    def set_cached(self, q, last, remembered):
+        val = {"last": last, "remembered": remembered}
+        self.DB_cache[q] = val
+        set_value(DB, q, val)
 
     def newFile(self):
         if self.filesCur == self.filesMax:
@@ -156,6 +171,9 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         #         allExpired = False
         #         break
 
+        # profiler = Profiler()
+        # profiler.start()
+
         now = datetime.now()
         for filename, _ in self.files.items():
             if self.files[filename]:
@@ -163,14 +181,12 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
             for q, a in wordsFromFile(filename).items():
                 if q in self.words and a != self.words[q]:
-                    print(f"Duplicate word <{q}> in {filename}")
+                    print(f"Duplicate word < {q} > in {filename} : {a} / {self.words[q]}")
                     continue
 
                 self.words[q] = a
 
-                word_data = get_value(DB, q)
-                remembered = word_data.get("remembered") if word_data else timedelta(0)
-                last       = word_data.get("last")       if word_data else now
+                last, remembered = self.get_cached(q, now, timedelta(0))
 
                 expire = last + remembered
                 ratio  = timedelta2ratio(remembered)
@@ -190,6 +206,9 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
             if self.ratioCur / self.ratioMax < WINRATIO:
                 break
 
+        # profiler.stop()
+        # profiler.open_in_browser()
+
         self.words = randomDict(self.words)
 
         self.reindex()
@@ -206,10 +225,7 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
             if self.expires[q] > now:
                 continue
 
-            def_val = {"last": datetime.now(), "remembered": timedelta(0)}
-            word_data = get_value(DB, q, def_val)
-            self.last       = word_data.get("last")
-            self.remembered = word_data.get("remembered")
+            self.last, self.remembered = self.get_cached(q, datetime.now(), timedelta(0))
 
             self.current_question = q
             self.current_answer   = a
@@ -252,27 +268,18 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
             plus  = key == Qt.Key_Plus  or key == Qt.Key_Equal or key == Qt.Key_Up
             minus = key == Qt.Key_Minus or key == Qt.Key_Down
-            if ctrl and plus:
-                self.result = MEMORYUP * MEMORYUP * MEMORYUP
-            elif ctrl and minus:
-                self.result = 1 / (MEMORYDOWN * MEMORYDOWN * MEMORYDOWN)
-            elif plus:
-                self.result = MEMORYUP
+
+            power = 1 if ctrl else 2
+            if   plus :
+                self.result = MEMORYUP ** power
             elif minus:
-                self.result = 1 / MEMORYDOWN
+                self.result = 1. / (MEMORYDOWN ** power)
 
             if self.result != 1.:
-
-                # profiler = Profiler()
-                # profiler.start()
-
                 self.store_result()
                 self.checkForNewFile()
                 self.draw_diagram()
                 self.new_word()
-
-                # profiler.stop()
-                # profiler.open_in_browser()
 
     def store_result(self):
         if self.remembered == timedelta(0):
@@ -281,7 +288,7 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         self.remembered *= self.result
 
         now = datetime.now()
-        set_value(DB, self.current_question, {"last": now, "remembered": self.remembered})
+        self.set_cached(self.current_question, now, self.remembered)
 
         self.expires[self.current_question] = now + self.remembered
 

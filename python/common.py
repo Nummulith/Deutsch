@@ -47,12 +47,12 @@ def wordsFromFile(filename):
 
                 if forward:
                     if De in entries and Ru != entries[De]:
-                        print(f"Duplicate word <{De}> inside {filename} : {Ru} / {entries[De]}")
+                        print(f"Duplicate word < {De} > inside {filename} : {Ru} / {entries[De]}")
                     entries[De] = Ru
 
                 if reverse:
                     if Ru in entries and De != entries[Ru]:
-                        print(f"Duplicate word <{Ru}> inside {filename} : {De} / {entries[Ru]}")
+                        print(f"Duplicate word < {Ru} > inside {filename} : {De} / {entries[Ru]}")
                     entries[Ru] = De
 
     return entries
