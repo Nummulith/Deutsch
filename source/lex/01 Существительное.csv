@@ -19,12 +19,12 @@ die Nachricht,сообщение / новость
 der Bescheid,решение / ответ
 der Sinn,смысл
 der Sohn,сын,-
-der Spaß,веселье,-
+der Spaß,веселье / удовольствие
 das Klavier,пианино / фортепиано
 die Geige,скрипка
 das Instrument,инструмент
 die Wohnung,квартира
-das Eis,мороженое
+das Eis,"лёд, мороженое"
 der Kuchen,пирог
 das Getränk,напиток
 der Saft,сок
@@ -43,9 +43,8 @@ das Dokument,документ
 das Handy,мобильный телефон
 das Geschirr,посуда
 der Regenschirm,зонт
-die Fenster,окно
 die Wand,стена
-das Ferien,каникулы
+die Ferien,каникулы
 die Tür,дверь
 der Urlaub,отпуск
 die Lampe,лампа
@@ -66,4 +65,4 @@ das Problem,проблема
 der Eingang,вход / подъезд
 der Schrank,шкаф
 das Regal,полка / стеллаж
-die Gebäude,здание / сооружение / строение
+das Gebäude,строение

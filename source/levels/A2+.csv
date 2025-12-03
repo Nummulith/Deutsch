@@ -61,9 +61,9 @@ umsteigen,"пересаживаться, переходить на другую 
 "die Brücke, -n",мост
 "die Ampel, -n",светофор
 dorther,оттуда
-dorthin,туда
-heraus,наружу
-herein,внутрь
+dorthin,вон туда
+heraus,сюда наружу
+herein,сюда внутрь
 vorbei,мимо
 vorwärts,прямо вперед
 vorne,впереди
@@ -104,7 +104,7 @@ zuletzt,в завершение
 reservieren,резервировать
 buchen,бронировать
 packen,собирать чемоданы
-einpacken,взять с собой
+einpacken,"упаковать, собрать"
 "der Rucksack, -¨e",рюкзак
 "der Weg, -e","путь, дорога"
 unterwegs sein,быть в пути
@@ -183,7 +183,7 @@ die Nudeln (Pl.),лапша
 "die Pizza, -s",пицца
 "die Süßigkeit, -en",сладость
 "der Zucker, —",сахар
-das Eis (Sn.),"мороженое, лёд"
+das Eis,"лёд, мороженое"
 "die Schokolade, -n",шоколад
 "die Torte, -n",торт
 "die Suppe, -n",суп
@@ -201,8 +201,8 @@ bestehen,состоять
 lassen,оставлять / позволять
 stören,"мешать, беспокоить"
 abschließen,заключать
-aufmachen,открывать
-zumachen,закрывать
+aufmachen,открывать (физ.)
+zumachen,закрывать (физ.)
 aufpassen,следить
 beenden,заканчивать
 leihen,давать в аренду
@@ -217,7 +217,6 @@ wecken,будить
 wehtun,делать больно
 weitermachen,продолжать
 weiterhelfen,помочь продвинуться в чем-либо
-zeigen,"показывать, указывать"
 austragen,разносить
 bauen,строить
 herstellen,производить
@@ -276,7 +275,7 @@ aktiv,активный
 offen,открытый
 echt,"настоящий, неподдельный"
 eng,узкий
-ganz,совсем
+ganz,целый
 aktuell,актуальный
 modern,современный
 typisch,типичный
@@ -285,7 +284,7 @@ direkt,"прямой, прямолинейный"
 dringend,"неотложный, срочный"
 gefährlich,опасный
 schädlich,вредный
-schlimm,плохой
+schlimm,ужасно
 schwierig,"тяжёлый, трудный"
 streng,строгий
 schwach,слабый
@@ -299,7 +298,6 @@ unbedingt,безусловный
 vorsichtig,осторожный
 wahr,"истинный, правдивый"
 verschieden,разный
-sich fühlen,чувствовать себя
 sich erinnern,вспоминать
 sich ärgern,злиться
 denken,думать
@@ -328,7 +326,7 @@ Lieblings-,любимый
 "der Kontakt, -e",контакт
 "der Rentner, —",пенсионер
 "der Besuch, -e","визит, посещение"
-"die Feier, -n",праздник
+"die Feier, -n",празднование
 "das Fest, -e",праздник
 "der Wunsch, -¨e",пожелание
 wünschen,желать
@@ -353,13 +351,13 @@ lügen,лгать
 "das Interesse, -n",интерес
 sich interessieren,интересоваться
 interessant,интересно
-der Spaß (Sn.),удовольствие
+der Spaß,веселье / удовольствие
 "die Musik, -en",музыка
 das Radio (Sn.),радио
 "die Sendung, -en","передача по тв, радио"
 singen,петь
 "die Gitarre, -n",гитара
-"das Klavier, -e",пианино
+"das Klavier, -e",пианино / фортепиано
 "die Zeitschrift, -en",журнал
 "das Rätsel, —",загадка
 "der Krimi, -s",детектив
@@ -383,7 +381,6 @@ spazieren gehen,идти гулять
 "die Veranstaltung, -en",представление
 "die Ausstellung, -en",выставка
 "das Festival, -s",фестиваль
-"das Museum, die Museen",музей
 "das Theater, —",театр
 "der Titel, —","название, заголовок"
 "das Plakat, -e",плакат
@@ -580,7 +577,7 @@ natürlich,конечно / естественно
 wahrscheinlich,возможно
 hoffentlich,надеюсь
 wirklich,действительно
-toll,отлично / класс!
+toll,классно / круто
 schade,жаль
 fast,почти
 endlich,наконец-то!
@@ -592,7 +589,6 @@ außerdem,кроме того
 deshalb,поэтому
 doch,"всё-таки да(опровержение отрицания)"
 anders,иначе
-besonders,особенно
 "die Band, -s",музыкальная группа
 "das Band, -¨er",лента
 "der Band, -¨e",том

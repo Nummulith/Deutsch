@@ -28,7 +28,7 @@ der Himmel,небо
 das Gewitter,непогода
 die Wolke,облако
 bewölkt,облачно
-der Schnee (Sn.),снег
+der Schnee,снег
 schneien,идёт снег
 die Natur,природа
 die Landschaft,ландшафт
@@ -62,9 +62,9 @@ der Fahrplan,расписание движения
 die Brücke,мост
 die Ampel,светофор
 dorther,оттуда
-dorthin,туда
-heraus,наружу
-herein,внутрь
+dorthin,вон туда
+heraus,сюда наружу
+herein,сюда внутрь
 vorbei,мимо
 vorwärts,прямо вперед
 vorne,впереди
@@ -79,7 +79,7 @@ nirgends,нигде
 überall,повсюду
 weit,далеко
 "das Ziel, -e",цель
-die Nähe (Sn.),близость
+die Nähe,близость
 wegbringen,унести
 wegfahren,уехать
 weggehen,уйти
@@ -105,7 +105,7 @@ der Tourist,турист
 reservieren,резервировать
 buchen,бронировать
 packen,собирать чемоданы
-einpacken,взять с собой
+einpacken,"упаковать, собрать"
 der Rucksack,рюкзак
 der Weg,"путь, дорога"
 unterwegs sein,быть в пути
@@ -173,18 +173,18 @@ sauer,кислый
 scharf,острый
 "der Supermarkt, -¨e",супермаркет
 "das Mineralwasser, -¨",минеральная вода
-das Rind (Sn.),говядина
+das Rind,говядина
 "die Wurst, -¨e",колбаса
 "der Käse, —",сыр
 "die Bohne, -n",бобы
 "die Orange, -n",апельсин
 "die Zitrone, -n",лимон
 "der Hamburger, —",гамбургер
-die Nudeln (Pl.),лапша
+die Nudeln,лапша
 "die Pizza, -s",пицца
 "die Süßigkeit, -en",сладость
 "der Zucker, —",сахар
-das Eis (Sn.),"мороженое, лёд"
+das Eis,"лёд, мороженое"
 "die Schokolade, -n",шоколад
 "die Torte, -n",торт
 "die Suppe, -n",суп
@@ -202,8 +202,8 @@ bestehen,состоять
 lassen,оставлять / позволять
 stören,"мешать, беспокоить"
 abschließen,заключать
-aufmachen,открывать
-zumachen,закрывать
+aufmachen,открывать (физ.)
+zumachen,закрывать (физ.)
 aufpassen,следить
 beenden,заканчивать
 leihen,давать в аренду
@@ -218,7 +218,6 @@ wecken,будить
 wehtun,делать больно
 weitermachen,продолжать
 weiterhelfen,помочь продвинуться в чем-либо
-zeigen,"показывать, указывать"
 austragen,разносить
 bauen,строить
 herstellen,производить
@@ -277,7 +276,7 @@ aktiv,активный
 offen,открытый
 echt,"настоящий, неподдельный"
 eng,узкий
-ganz,совсем
+ganz,целый
 aktuell,актуальный
 modern,современный
 typisch,типичный
@@ -286,7 +285,7 @@ direkt,"прямой, прямолинейный"
 dringend,"неотложный, срочный"
 gefährlich,опасный
 schädlich,вредный
-schlimm,плохой
+schlimm,ужасно
 schwierig,"тяжёлый, трудный"
 streng,строгий
 schwach,слабый
@@ -300,7 +299,6 @@ unbedingt,безусловный
 vorsichtig,осторожный
 wahr,"истинный, правдивый"
 verschieden,разный
-sich fühlen,чувствовать себя
 sich erinnern,вспоминать
 sich ärgern,злиться
 denken,думать
@@ -329,7 +327,7 @@ Lieblings-,любимый
 "der Kontakt, -e",контакт
 "der Rentner, —",пенсионер
 "der Besuch, -e","визит, посещение"
-"die Feier, -n",праздник
+"die Feier, -n",празднование
 "das Fest, -e",праздник
 "der Wunsch, -¨e",пожелание
 wünschen,желать
@@ -354,13 +352,13 @@ lügen,лгать
 "das Interesse, -n",интерес
 sich interessieren,интересоваться
 interessant,интересно
-der Spaß (Sn.),удовольствие
+der Spaß,веселье / удовольствие
 "die Musik, -en",музыка
-das Radio (Sn.),радио
+das Radio,радио
 "die Sendung, -en","передача по тв, радио"
 singen,петь
 "die Gitarre, -n",гитара
-"das Klavier, -e",пианино
+"das Klavier, -e",пианино / фортепиано
 "die Zeitschrift, -en",журнал
 "das Rätsel, —",загадка
 "der Krimi, -s",детектив
@@ -384,7 +382,6 @@ spazieren gehen,идти гулять
 "die Veranstaltung, -en",представление
 "die Ausstellung, -en",выставка
 "das Festival, -s",фестиваль
-"das Museum, die Museen",музей
 "das Theater, —",театр
 "der Titel, —","название, заголовок"
 "das Plakat, -e",плакат
@@ -398,7 +395,7 @@ berühmt,известный / знаменитый
 "das Krankenhaus, -häuser",больница
 "die Krankenkasse, -n","медицинская страховка, больничная касса в германии"
 "die Krankheit, -en",болезнь
-die Gesundheit (Sn.),здоровье
+die Gesundheit,здоровье
 gesund,здоровый
 schwanger,беременна
 erkältet sein,быть простуженным
@@ -420,7 +417,7 @@ sterben,умирать
 "der Magen, —",желудок
 "der Fuß̈, -¨e",стопа
 "die Creme, -s",крем
-die Kosmetik (Sn.),косметика
+die Kosmetik,косметика
 "das Parfüm, -s",парфюм
 trainieren,тренироваться
 "das Training, -s",тренировка
@@ -429,9 +426,9 @@ trainieren,тренироваться
 joggen,бегать трусцой
 reiten,ездить верхом
 "der Ball, -¨e",мяч
-der Basketball (Sn.),баскетбол
-der Volleyball (Sn.),волейбол
-das Tennis (Sn.),теннис
+der Basketball,баскетбол
+der Volleyball,волейбол
+das Tennis,теннис
 "der Ski, -er",лыжи
 sich verletzen,получить травму
 planen,планировать
@@ -482,7 +479,7 @@ aussprechen,"произносить, говорить"
 "die Note, -n",оценка
 "die Bibliothek, -en",библиотека
 "die Cafeteria, die Cafeterien",кафетерий
-die Ferien (Pl.),каникулы
+die Ferien,каникулы
 "das Zeugnis, -se","свидетельство, диплом"
 kündigen,увольняться
 freiwillig,по желанию
@@ -581,7 +578,7 @@ natürlich,конечно / естественно
 wahrscheinlich,возможно
 hoffentlich,надеюсь
 wirklich,действительно
-toll,отлично / класс!
+toll,классно / круто
 schade,жаль
 fast,почти
 endlich,наконец-то!
@@ -593,13 +590,11 @@ außerdem,кроме того
 deshalb,поэтому
 doch,"всё-таки да(опровержение отрицания)"
 anders,иначе
-besonders,особенно
 die Band,музыкальная группа
 das Band,лента
 der Band,том
 das Gehalt,зарплата
 der Gehalt,содержимое
-die See,море
 der See,озеро
 dass,что (союз)
 weil,потому что

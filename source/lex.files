@@ -1,5 +1,6 @@
 Path
-.\source\lex\
-.\source\themes\
-.\source\levels\A1.csv
-~.\source\levels\A2.csv
+source\lex\
+source\themes\
+source\levels\A1.csv
+source\levels\A1\
+source\levels\A2\

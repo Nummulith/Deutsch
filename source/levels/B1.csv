@@ -96,7 +96,6 @@ verabschieden,принимать [закон и т. п.]
 spüren,чувствовать [обычно физически]
 fühlen,чувствовать [обычно эмоционально]
 "das Gefühl, -e","чувство, ощущение"
-gucken,глядеть
 schauen,смотреть
 zuschauen,наблюдать
 blind,слепой
@@ -164,7 +163,7 @@ ländlich,"деревенский, сельский"
 "der Vorort, -e",пригород
 "der Hof, -¨e",двор
 "der Bau, die Bauten",стройка
-"das Gebäude, -n","здание, постройка"
+"das Gebäude, -n","строение"
 "der Turm, -¨e",башня
 "die Burg, -en",крепость
 "die Hütte, -n",хижина
@@ -205,7 +204,7 @@ das Zuhause (Sn.),родной дом
 klingeln,звонить в звонок
 klingen,"звенеть, звучать"
 "die Klingel, -n",дверной звонок
-die Möbel (Pl.),мебель
+die Möbel,мебель
 möbliert,меблированный
 "der Sessel, —",кресло
 "die Couch, -s",диван
@@ -429,7 +428,6 @@ winken,"махать рукой; «маячить», «светить»"
 wirken,оказывать воздействие
 "die Wirkung, -en",воздействие
 zerstören,разрушать
-ziehen,тянуть
 zurechtkommen,"разобраться [например, найти самому что нужно в магазине]"
 sich setzen,садиться
 setzen,сажать
@@ -1648,7 +1646,7 @@ umdrehen,переворачивать на другую сторону
 "die Umfrage, -n",опрос
 "die Umgebung, -en",окружение
 "die Umleitung, -en",объезд
-sich umziehen,переодеваться
+sich umziehen,переодевать(ся)
 umziehen,переезжать
 umgehen,обходиться
 umgekehrt,наоборот
@@ -1766,8 +1764,8 @@ dahin,туда
 damit,тем самым; чтобы
 danach,после
 her,сюда
-heraus,наружу
-herein,внутрь
+heraus,сюда наружу
+herein,сюда внутрь
 herunter,вниз
 herunterfahren,"ехать вниз [например, на лифте]"
 herunterwerfen,"бросить вниз [сюда, в сторону говорящего]"
@@ -1787,9 +1785,8 @@ jeweils,каждый; каждый раз
 jederzeit,в любое время
 jedes Mal,каждый раз
 bloß,"только, просто, только что"
-gar,"совершенно, совсем"
+gar,"совсем, вообще, готовый"
 halt,"непереводимая частица усиления, требования"
-mal,частица -ка
 ob,частица «ли»
 ziemlich,"довольно, достаточно"
 als ob,"как будто, словно"

@@ -20,9 +20,9 @@ DB  = f"./trainer/{THEME}.db"
 # FILES = f"./course/{THEME}.files"
 # DB  = f"./trainer/{THEME}.db"
 
-MEMORYUP   = 2.5
-MEMORYDOWN = 3.0
-WINRATIO   = 0.6
+MEMORYUP   = 2.1
+MEMORYDOWN = 2.5
+WINRATIO   = 0.8
 
 def ChangeExt(path, new_ext):
     base, _ = os.path.splitext(path)
@@ -93,18 +93,13 @@ class DiagramWidget(QtWidgets.QWidget):
 
         qp.end()
 
-        # wnd.label_files.setText(f"{int(wnd.filesCur)} / {int(wnd.filesMax)} | {filesExp} / {int(wnd.ratioMax)} | {wnd.ratioCur / wnd.ratioMax:.5f}")
-
-        # print(f"{wnd.ratioCur:.2f} / {int(wnd.ratioMax)} = {wnd.ratioCur / wnd.ratioMax:.5f}")
-        wnd.label_total.setText(f"remembered {wnd.ratioCur:.2f} / {int(wnd.ratioMax)}")
+        wnd.label_total.setText(f"rmb {wnd.ratioCur / wnd.ratioMax:.2f} = {wnd.ratioCur:.2f} / {int(wnd.ratioMax)}")
         wnd.paintLabel(wnd.label_total, wnd.ratioCur / wnd.ratioMax)
 
-        # print(f"{int(wnd.filesCur)} / {int(wnd.filesMax)} = {wnd.filesCur / wnd.filesMax:.5f}")
-        wnd.label_files.setText(f"files {int(wnd.filesCur)} / {int(wnd.filesMax)}")
+        wnd.label_files.setText(f"fls {wnd.filesCur / wnd.filesMax:.2f} = {int(wnd.filesCur)} / {int(wnd.filesMax)}")
         wnd.paintLabel(wnd.label_files, wnd.filesCur / wnd.filesMax)
 
-        # print(f"{int(filesExp)} / {int(wnd.ratioMax)} = {filesExp / wnd.ratioMax:.5f}")
-        wnd.label_words.setText(f"learned {int(filesExp)} / {int(wnd.ratioMax)}")
+        wnd.label_words.setText(f"lrn {filesExp / wnd.ratioMax:.2f} = {int(filesExp)} / {int(wnd.ratioMax)}")
         wnd.paintLabel(wnd.label_words, filesExp / wnd.ratioMax)
 
 def timedelta2ratio(td: timedelta):
@@ -118,6 +113,9 @@ def timedelta2ratio(td: timedelta):
     return min(ratio, 1.0)
 
 def ratio2color(ratio, pale):
+    if ratio == 0:
+        return QtGui.QColor.fromRgb(255, 255, 255)
+
     # ratio: 0.0 (начало) → 1.0 (конец)
     # HSV: hue = 0 (красный) → 270 (фиолетовый)
     hue = int(270 * (ratio if ratio <= 1. else 1.))
@@ -140,7 +138,7 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         self.files = {f: False for f in self.files}
         self.filesMax = len(self.files)
         self.words, self.ratios, self.expires = {}, {}, {}
-        self.filesCur, self.ratioMax, self.ratioCur = 0., 0., 0.
+        self.filesCur, self.ratioMax, self.ratioCur = 0, 0., 0.
 
         self.DB_cache = get_all(DB)
 
@@ -180,8 +178,9 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
                 continue
 
             for q, a in wordsFromFile(filename).items():
-                if q in self.words and a != self.words[q]:
-                    print(f"Duplicate word < {q} > in {filename} : {a} / {self.words[q]}")
+                if q in self.words:
+                    if a != self.words[q]:
+                        print(f"Duplicate word < {q} > in {filename} : {a} / {self.words[q]}")
                     continue
 
                 self.words[q] = a
@@ -200,10 +199,9 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
             self.filesCur += 1.
             self.files[filename] = True
 
-            # print(self.ratioMax, self.ratioCur, self.ratioCur / self.ratioMax, filename)
             print(f"{int(self.ratioMax)} questions after loading {filename}")
 
-            if self.ratioCur / self.ratioMax < WINRATIO:
+            if not self.checkForNewFile():
                 break
 
         # profiler.stop()
@@ -246,12 +244,11 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         label.setPalette(palette)
 
     def update_view(self):
-        self.label_question.setText(self.current_question)
-        self.paintLabel(self.label_question, timedelta2ratio(self.remembered))
-
-        self.label_answer  .setText(self.current_answer if self.phase == "A" else "")
-
-        self.label_word.setText(f"{self.last.strftime("%d/%m %H:%M")} | {short_timedelta(self.remembered)}")
+        if self.current_question:
+            self.label_question.setText(self.current_question)
+            self.paintLabel(self.label_question, timedelta2ratio(self.remembered))
+            self.label_answer  .setText(self.current_answer if self.phase == "A" else "")
+            self.label_word.setText(f"{self.last.strftime("%d/%m %H:%M")} | {short_timedelta(self.remembered)}")
 
     def keyPressEvent(self, event):
         key = event.key()
@@ -264,12 +261,12 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
                 self.phase = "A"
                 self.update_view()
         elif self.phase == "A":
-            ctrl = mod & Qt.ControlModifier
+            ctrl = bool(mod & Qt.ControlModifier)
 
             plus  = key == Qt.Key_Plus  or key == Qt.Key_Equal or key == Qt.Key_Up
             minus = key == Qt.Key_Minus or key == Qt.Key_Down
 
-            power = 1 if ctrl else 2
+            power = 1 if not ctrl else 2
             if   plus :
                 self.result = MEMORYUP ** power
             elif minus:
@@ -283,7 +280,9 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
     def store_result(self):
         if self.remembered == timedelta(0):
-            self.remembered = timedelta(minutes = 5)
+            self.remembered = timedelta(minutes = 1)
+
+        preRemembered = self.remembered
 
         self.remembered *= self.result
 
@@ -292,8 +291,8 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
         self.expires[self.current_question] = now + self.remembered
 
-        ratio = self.ratios [self.current_question]
-        self.ratioCur -= ratio
+        preRatio = self.ratios [self.current_question]
+        self.ratioCur -= preRatio
 
         ratio = timedelta2ratio(self.remembered)
         self.ratioCur += ratio
@@ -301,7 +300,10 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
         self.reindex()
 
-    def checkForNewFile(self):
+        self.label_last.setText(f"{self.current_question} = {self.current_answer} | {"+" if self.result > 1. else "-"}  {self.result:.2f} | {preRatio:.2f} > {ratio:.2f} | {short_timedelta(preRemembered)} > {short_timedelta(self.remembered)}")
+
+
+    def checkForAllExpired(self):
         allExpired = True
         now = datetime.now()
         for q, exp in self.expires.items():
@@ -309,7 +311,10 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
                 allExpired = False
                 break
 
-        if allExpired or self.ratioCur / self.ratioMax >= WINRATIO:
+        return allExpired
+
+    def checkForNewFile(self):
+        if self.checkForAllExpired() or self.ratioCur / self.ratioMax >= WINRATIO:
             self.newFile()
 
     def draw_diagram(self):
