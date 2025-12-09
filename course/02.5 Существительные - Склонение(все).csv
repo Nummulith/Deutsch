@@ -1,0 +1,43 @@
+Question,Answer
+~question_language,ru
+~answer_language,de
+
+Кто? (опр) Мужчина. Nominativ, Wer? Der Mann
+Кто? (опр) Женщина. Nominativ, Wer? Die Frau
+Кто? (опр) Ребёнок. Nominativ, Wer? Das Kind
+Кто? (опр) Дети. Nominativ, Wer? Die Kinder
+
+Кого? (опр) Мужчину. Akkusativ, Wen? Den Mann
+Кого? (опр) Женщину. Akkusativ, Wen? Die Frau
+Кого? (опр) Ребёнка. Akkusativ, Wen? Das Kind
+Кого? (опр) Детей. Akkusativ, Wen? Die Kinder
+
+Кому? (опр) Мужчине. Dativ, Wem? Dem Mann
+Кому? (опр) Женщине. Dativ, Wem? Der Frau
+Кому? (опр) Ребёнку. Dativ, Wem? Dem Kind
+Кому? (опр) Детям. Dativ, Wem? Den Kindern
+
+Чей? (опр) Мужчины. Genitiv, Wessen? Des Mannes
+Чей? (опр) Женщины. Genitiv, Wessen? Der Frau
+Чей? (опр) Ребёнка. Genitiv, Wessen? Des Kindes
+Чей? (опр) Детей. Genitiv, Wessen? Der Kinder
+
+Кто? (неопр) Мужчина. Nominativ, Wer? Ein Mann
+Кто? (неопр) Женщина. Nominativ, Wer? Eine Frau
+Кто? (неопр) Ребёнок. Nominativ, Wer? Ein Kind
+Кто? (неопр) Дети. Nominativ, Wer? Meine Kinder
+
+Кого? (неопр) Мужчину. Akkusativ, Wen? Einen Mann
+Кого? (неопр) Женщину. Akkusativ, Wen? Eine Frau
+Кого? (неопр) Ребёнка. Akkusativ, Wen? Ein Kind
+Кого? (неопр) Детей. Akkusativ, Wen? Meine Kinder
+
+Кому? (неопр) Мужчине. Dativ, Wem? Einem Mann
+Кому? (неопр) Женщине. Dativ, Wem? Einer Frau
+Кому? (неопр) Ребёнку. Dativ, Wem? Einem Kind
+Кому? (неопр) Детям. Dativ, Wem? Meinen Kindern
+
+Чей? (неопр) Мужчины. Genitiv, Wessen? Eines Mannes
+Чей? (неопр) Женщины. Genitiv, Wessen? Einer Frau
+Чей? (неопр) Ребёнка. Genitiv, Wessen? Eines Kindes
+Чей? (неопр) Детей. Genitiv, Wessen? Meiner Kinder
