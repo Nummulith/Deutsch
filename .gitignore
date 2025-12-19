@@ -9,3 +9,7 @@
 /slow
 /python/__pycache__
 source/Dictionary.csv
+debug.log
+*.db.bak
+*.db.dat
+*.db.dir

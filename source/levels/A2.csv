@@ -21,11 +21,12 @@ warm,тёплый
 kühl,прохладный
 kalt,холодный
 dunkel,тёмный
+der Nebel,туман
 neblig,туманно
 sonnig,солнечно
 windig,ветрено
 der Himmel,небо
-das Gewitter,непогода
+das Gewitter,гроза
 die Wolke,облако
 bewölkt,облачно
 der Schnee,снег
@@ -85,6 +86,7 @@ wegfahren,уехать
 weggehen,уйти
 weglaufen,убежать
 wegnehmen,"отнять, забрать"
+werfen,бросать
 wegwerfen,выбросить
 zurückfahren,ехать обратно
 zurückgeben,отдать обратно
@@ -193,7 +195,7 @@ setzen,сажать
 fallen,падать
 hängen,"висеть, вешать"
 klappen,удаваться
-passen,подходить
+passen,подходить (соответствовать)
 passieren,происходить
 stattfinden,состояться
 sich beeilen,поторапливаться

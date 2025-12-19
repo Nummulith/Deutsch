@@ -24,7 +24,7 @@ neblig,туманно
 sonnig,солнечно
 windig,ветрено
 "der Himmel, —",небо
-"das Gewitter, —",непогода
+das Gewitter,гроза
 "die Wolke, -n",облако
 bewölkt,облачно
 der Schnee (Sn.),снег
@@ -84,6 +84,7 @@ wegfahren,уехать
 weggehen,уйти
 weglaufen,убежать
 wegnehmen,"отнять, забрать"
+werfen,бросать
 wegwerfen,выбросить
 zurückfahren,ехать обратно
 zurückgeben,отдать обратно
@@ -192,7 +193,7 @@ setzen,сажать
 fallen,падать
 hängen,"висеть, вешать"
 klappen,удаваться
-passen,подходить
+passen,подходить (соответствовать)
 passieren,происходить
 stattfinden,состояться
 sich beeilen,поторапливаться
