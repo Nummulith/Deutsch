@@ -23,6 +23,7 @@ DB  = f"./trainer/{THEME}.db"
 MEMORYUP   = 2.1
 MEMORYDOWN = 2.5
 WINRATIO   = 0.8
+WINDIFF    = 100
 
 def ChangeExt(path, new_ext):
     base, _ = os.path.splitext(path)
@@ -314,7 +315,8 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
         return allExpired
 
     def checkForNewFile(self):
-        if self.checkForAllExpired() or self.ratioCur / self.ratioMax >= WINRATIO:
+        if self.checkForAllExpired()\
+        or (self.ratioCur / self.ratioMax >= WINRATIO and self.ratioMax - self.ratioCur < WINDIFF):
             self.newFile()
 
     def draw_diagram(self):
