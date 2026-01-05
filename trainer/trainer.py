@@ -1,7 +1,7 @@
 # from pyinstrument import Profiler
 
 import math
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 
 from PyQt5 import QtWidgets, uic, QtGui
 from PyQt5.QtCore import Qt, QRectF
@@ -12,35 +12,43 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../pyth
 from common import wordsFrom, randomDict, filesFromFiles, wordsFromFile
 from common_db import get_all, set_value, get_value
 
-THEME = "lex"
-FILES = f"./source/{THEME}.files"
-DB  = f"./trainer/{THEME}.db"
-
-# THEME = "course"
-# FILES = f"./course/{THEME}.files"
-# DB  = f"./trainer/{THEME}.db"
-
-MEMORYUP   = 2.1
-MEMORYDOWN = 2.5
-WINRATIO   = 0.8
-WINDIFF    = 100
+from settings import *
 
 def ChangeExt(path, new_ext):
     base, _ = os.path.splitext(path)
     return base + new_ext
 
 def short_timedelta(delta: timedelta) -> str:
-    total_seconds = int(delta.total_seconds())
-    days = total_seconds // 86400
-    if days > 0:
-        return f"{days} дн"
-    hours = total_seconds // 3600
-    if hours > 0:
-        return f"{hours} ч"
-    minutes = total_seconds // 60
-    if minutes > 0:
-        return f"{minutes} мин"
-    return f"{total_seconds} сек"
+    secs = int(delta.total_seconds())
+
+    mons = secs // (86400 * 31)
+    monsS = f"{mons} мес."
+    secs -= mons * (86400 * 31)
+
+    days = secs // 86400
+    daysS = f"{days} дн."
+    secs -= days * 86400
+
+    hours = secs // 3600
+    hoursS = f"{hours} ч."
+    secs -= hours * 3600
+
+    mins = secs // 60
+    minsS = f"{mins} мин."
+    secs -= mins * 60
+
+    secsS = f"{secs} сек."
+
+    if mons > 0:
+        return f"{monsS} {daysS}"
+    elif days  > 0:
+        return f"{daysS} {hoursS}"
+    elif hours > 0:
+        return f"{hoursS} {minsS}"
+    elif mins  > 0:
+        return f"{minsS} {secsS}"
+    else:
+        return secsS
 
 class DiagramWidget(QtWidgets.QWidget):
     def __init__(self, window_):
@@ -105,12 +113,10 @@ class DiagramWidget(QtWidgets.QWidget):
 
 def timedelta2ratio(td: timedelta):
     total_seconds = td.total_seconds()
-    # Порог — примерно 1 год
-    max_seconds = 365 * 24 * 3600
 
     # логарифмическая нормализация
     # +1 чтобы избежать log(0)
-    ratio = math.log1p(total_seconds) / math.log1p(max_seconds)
+    ratio = math.log1p(total_seconds) / math.log1p(REMEMBERSEC)
     return min(ratio, 1.0)
 
 def ratio2color(ratio, pale):
@@ -131,6 +137,7 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        print(".")
 
         self.diagram = DiagramWidget(self)
         self.lo_diagram.addWidget(self.diagram)
@@ -143,12 +150,25 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
         self.DB_cache = get_all(DB)
 
+        self.statKey = date.today().isoformat()
+        def_val = {"tasks": 0, "duration": timedelta(0)}
+        self.stats = get_value(DBs, self.statKey, def_val)
+
+        self.stats["date"] = date.today()
+
+        self.stats["remembered"] = timedelta(0)
+        for q, d in self.DB_cache.items():
+            if not "remembered" in d:
+                continue
+            self.stats["remembered"] += d["remembered"]
+        # print(self.stats)
+
         # print("\r\n\r", end="");
-        print(".")
         self.newFile()
 
         self.phase = "Q"
         self.new_word()
+        self.update_view()
 
     def get_cached(self, q, def_last = None, def_remembered = None):
         def_val = {"last": def_last, "remembered": def_remembered}
@@ -228,15 +248,14 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
             self.current_question = q
             self.current_answer   = a
+
+            self.start = datetime.now()
+
             break
 
         if self.current_question == None:
             print("All done!")
             self.close()
-
-        self.phase = "Q"
-        self.result = 1.
-        self.update_view()
 
     def paintLabel(self, label, ratio):
         palette = label.palette()
@@ -267,25 +286,28 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
             plus  = key == Qt.Key_Plus  or key == Qt.Key_Equal or key == Qt.Key_Up
             minus = key == Qt.Key_Minus or key == Qt.Key_Down
 
-            power = 1 if not ctrl else 2
-            if   plus :
-                self.result = MEMORYUP ** power
-            elif minus:
-                self.result = 1. / (MEMORYDOWN ** power)
-
-            if self.result != 1.:
-                self.store_result()
+            if plus or minus:
+                self.store_result(ctrl, plus, minus)
                 self.checkForNewFile()
                 self.draw_diagram()
-                self.new_word()
 
-    def store_result(self):
+                self.phase = "Q"
+                self.new_word()
+                self.update_view()
+
+    def store_result(self, ctrl, plus, minus):
+        power = 1 if not ctrl else 2
+        if   plus :
+            result = MEMORYUP ** power
+        elif minus:
+            result = 1. / (MEMORYDOWN ** power)
+
         if self.remembered == timedelta(0):
             self.remembered = timedelta(minutes = 1)
 
         preRemembered = self.remembered
 
-        self.remembered *= self.result
+        self.remembered *= result
 
         now = datetime.now()
         self.set_cached(self.current_question, now, self.remembered)
@@ -301,7 +323,20 @@ class Window(QtWidgets.QMainWindow, uic.loadUiType(ChangeExt(sys.argv[0], ".ui")
 
         self.reindex()
 
-        self.label_last.setText(f"{self.current_question} = {self.current_answer} | {"+" if self.result > 1. else "-"}  {self.result:.2f} | {preRatio:.2f} > {ratio:.2f} | {short_timedelta(preRemembered)} > {short_timedelta(self.remembered)}")
+
+        # stats
+        self.stats["tasks"] += 1
+
+        duration = now - self.start
+        duration = min(duration, timedelta(seconds=THINKING_MAX))
+        self.stats["duration"] += duration
+
+        self.stats["remembered"] += (- preRemembered + self.remembered)
+
+        # print(self.stats)
+        set_value(DBs, self.statKey, self.stats)
+
+        self.label_last.setText(f"{self.current_question} = {self.current_answer} | {"+" if result > 1. else "-"}  {result:.2f} | {preRatio:.2f} > {ratio:.2f} | {short_timedelta(preRemembered)} > {short_timedelta(self.remembered)}")
 
 
     def checkForAllExpired(self):

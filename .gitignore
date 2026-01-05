@@ -13,3 +13,4 @@ debug.log
 *.db.bak
 *.db.dat
 *.db.dir
+/trainer/__pycache__

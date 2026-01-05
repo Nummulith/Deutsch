@@ -56,7 +56,7 @@ der Unfall,несчастный случай
 die Werkstatt,автосервис
 der Verkehr,транспорт
 das Verkehrsmittel,транспортное средство
-umsteigen,"пересаживаться, переходить на другую ветку"
+umsteigen,"пересаживаться (транспорт)"
 die Verspätung,опоздание
 der Stadtplan,план города
 der Fahrplan,расписание движения
@@ -74,7 +74,7 @@ außerhalb,за пределами
 drinnen,внутри
 drüben,"с другой стороны, с той стороны"
 gegenüber,напротив
-nächst-,следующий
+nächste,следующий
 neben,рядом (по соседству) с
 nirgends,нигде
 überall,повсюду
@@ -389,7 +389,7 @@ spazieren gehen,идти гулять
 "das Plakat, -e",плакат
 "das Poster, —",постер
 beliebt,пользующийся популярностью
-berühmt,известный / знаменитый
+berühmt,знаменитый
 "der Fan, -s",фанат
 "der Star, -s",звезда
 "die Tour, -en",тур

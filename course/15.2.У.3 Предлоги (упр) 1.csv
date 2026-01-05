@@ -30,6 +30,8 @@ Question,Answer
 Девочка покупает еду для кошки. (Akkusativ),Das Mädchen kauft das Essen für die Katze.
 Я ем всё без соли. (Akkusativ),Ich esse alles ohne Salz.
 Папа покупает хлеб. (Akkusativ),Der Vater kauft das Brot.
+Продукты в магазине дешевые.,Die Lebensmittel im Geschäft sind billig.
+
 ~question_language,de
 Ich kaufe bittere Schokolade ___ die Mutter. — Я покупаю горький шоколад для мамы. (Dativ или Akkusativ),für
 Wir gehen ____ der Arbeit ____ Hause. — Мы пойдем после работы домой. (Dativ или Akkusativ),"nach, nach"

@@ -1,0 +1,30 @@
+Question,Answer
+~question_language,ru
+~answer_language,de
+~pause,5000
+
+"Кошка дает ребенку собаку.","Die Katze gibt dem Kind den Hund."
+"Собака дает кошке ребенка.","Der Hund gibt der Katze das Kind."
+"Ребенок дает собаке кошку.","Das Kind gibt dem Hund die Katze."
+
+"Кошка дает ребенку собаку (неопр).","Eine Katze gibt einem Kind einen Hund."
+"Собака дает кошке ребенка (неопр).","Ein Hund gibt einer Katze ein Kind."
+"Ребенок дает собаке кошку (неопр).","Ein Kind gibt einem Hund eine Katze."
+
+"Кошка дает собаке ребенка.","Die Katze gibt dem Hund das Kind."
+"Собака дает ребенку кошку.","Der Hund gibt dem Kind die Katze."
+"Ребенок дает кошке собаку.","Das Kind gibt der Katze den Hund."
+
+"Кошка дает собаке ребенка (неопр).","Eine Katze gibt einem Hund ein Kind."
+"Собака дает ребенку кошку (неопр).","Ein Hund gibt einem Kind eine Katze."
+"Ребенок дает кошке собаку (неопр).","Ein Kind gibt einer Katze einen Hund."
+
+"Кошка дает ребенку родителей собаки.","Die Katze gibt dem Kind die Eltern des Hundes."
+"Родители дают кошке собаку ребенка.","Die Eltern geben der Katze den Hund des Kindes."
+"Собака дает родителям ребенка кошки.","Der Hund gibt den Eltern das Kind der Katze."
+"Ребенок дает собаке кошку родителей.","Das Kind gibt dem Hund die Katze der Eltern."
+
+"Кошка дает ребенку родителей собаки (неопр).","Eine Katze gibt einem Kind Eltern eines Hundes."
+"Родители дают кошке собаку ребенка (неопр).","Eltern geben einer Katze einen Hund eines Kindes."
+"Собака дает родителям ребенка кошки (неопр).","Ein Hund gibt Eltern ein Kind einer Katze."
+"Ребенок дает собаке кошку родителей (неопр).","Ein Kind gibt einem Hund eine Katze von Eltern."
