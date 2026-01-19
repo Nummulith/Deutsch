@@ -19,8 +19,8 @@ sie,её; Akk
 ihr,ей; Dat
 
 es,оно; Nom
-es,его(от оно); Akk
-ihm,ему(от оно); Dat
+es,его (для "оно"); Akk
+ihm,ему (для "оно"); Dat
 
 wir,мы; Nom
 uns,нас; Akk
@@ -37,4 +37,3 @@ ihnen,им; Dat
 Sie,Вы(ув); Nom
 Sie,Вас(ув); Akk
 Ihnen,Вам(ув); Dat
-

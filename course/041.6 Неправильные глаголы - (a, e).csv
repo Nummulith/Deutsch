@@ -3,11 +3,11 @@ Question,Answer
 ~answer_language,de
 я еду,ich fahre
 ты едешь,du fährst
-"он, она, оно едет","er/sie/es fährt"
-"мы, они, Вы(ув) едем/едете","wir, sie, Sie fahren"
+он/она/оно едет,er/sie/es fährt
+мы/они/Вы(ув) едем/едете,wir/sie/Sie fahren
 вы едете,ihr fahrt
 я ем,ich esse
 ты ешь,du isst
-"он, она, оно ест","er/sie/es isst"
-"мы, они, Вы(ув) едим/едите","wir, sie, Sie essen"
+он/она/оно ест,"er/sie/es isst"
+мы/они/Вы(ув) едим/едите,wir/sie/Sie essen
 вы едите,ihr esst

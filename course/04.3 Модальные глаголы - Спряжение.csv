@@ -2,40 +2,40 @@ Question,Answer
 ~question_language,de
 ~answer_language,de
 
-"ich, er/sie/es; müssen",muss
-du; müssen,musst
-"wir, sie, Sie; müssen",müssen
-ihr; müssen,müsst
-"ich, er/sie/es; sollen",soll
-du; sollen,sollst
-"wir, sie, Sie; sollen",sollen
-ihr; sollen,sollt
-"ich, er/sie/es; können",kann
-du; können,kannst
-"wir, sie, Sie; können",können
-ihr; können,könnt
-"ich, er/sie/es; dürfen",darf
-du; dürfen,darfst
-"wir, sie, Sie; dürfen",dürfen
-ihr; dürfen,dürft
-"ich, er/sie/es; wollen",will
-du; wollen,willst
-"wir, sie, Sie; wollen",wollen
-ihr; wollen,wollt
-"ich, er/sie/es; mögen",mag
-du; mögen,magst
-"wir, sie, Sie; mögen",mögen
-ihr; mögen,mögt
+"ich, er/sie/es; должен (необх)",muss
+du; должен (необх),musst
+"wir/sie/Sie; должен (необх)",müssen
+ihr; должен (необх),müsst
+"ich, er/sie/es; должен (треб)",soll
+du; должен (треб),sollst
+"wir/sie/Sie; должен (треб)",sollen
+ihr; должен (треб),sollt
+"ich, er/sie/es; мочь (возм)",kann
+du; мочь (возм),kannst
+"wir/sie/Sie; мочь (возм)",können
+ihr; мочь (возм),könnt
+"ich, er/sie/es; мочь (разр)",darf
+du; мочь (разр),darfst
+"wir/sie/Sie; мочь (разр)",dürfen
+ihr; мочь (разр),dürft
+"ich, er/sie/es; желать",will
+du; желать,willst
+"wir/sie/Sie; желать",wollen
+ihr; желать,wollt
+"ich, er/sie/es; предпочитаю",mag
+du; предпочитаю,magst
+"wir/sie/Sie; предпочитаю",mögen
+ihr; предпочитаю,mögt
 
-"ich, er/sie/es; möchten",möchte
-du; möchten,möchtest
-"wir, sie, Sie; möchten",möchten
-ihr; möchten,möchtet
-"ich, er/sie/es; könnten",könnte
-"du; könnten",könntest
-"wir, sie, Sie; könnten",könnten
-"ihr; könnten",könntet
-"ich, er/sie/es; würden",würde
-"du; würden",würdest
-"wir, sie, Sie; würden",würden
-"ihr; würden",würdet
+"ich, er/sie/es; предпочел бы (вежл)",möchte
+du; предпочел бы (вежл),möchtest
+"wir/sie/Sie; предпочел бы" (вежл),möchten
+ihr; предпочел бы (вежл),möchtet
+"ich, er/sie/es; мог бы (вежл)",könnte
+"du; мог бы (вежл)",könntest
+"wir/sie/Sie; мог бы (вежл)",könnten
+"ihr; мог бы (вежл)",könntet
+"ich, er/sie/es; стал бы (вежл)",würde
+"du; стал бы (вежл)",würdest
+"wir/sie/Sie; стал бы (вежл)",würden
+"ihr; стал бы (вежл)",würdet

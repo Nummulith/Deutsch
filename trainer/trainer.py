@@ -116,7 +116,15 @@ def timedelta2ratio(td: timedelta):
 
     # логарифмическая нормализация
     # +1 чтобы избежать log(0)
-    ratio = math.log1p(total_seconds) / math.log1p(REMEMBERSEC)
+    # ratio = math.log1p(total_seconds) / math.log1p(REMEMBERSEC)
+
+    # линейно
+    # ratio = total_seconds / REMEMBERSEC
+
+    # степенная
+    alpha = .7
+    ratio = (total_seconds / REMEMBERSEC) ** alpha
+    
     return min(ratio, 1.0)
 
 def ratio2color(ratio, pale):

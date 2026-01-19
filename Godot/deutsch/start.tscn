@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb5nw4wgjuw5i"]
+
+[ext_resource type="Script" uid="uid://d0guoedi4vg7s" path="res://button.gd" id="1_ots34"]
+[ext_resource type="Texture2D" uid="uid://dfju74ard7jt8" path="res://img/map.png" id="1_y5hus"]
+[ext_resource type="Script" uid="uid://fc7yu2wo6haq" path="res://map.gd" id="2_oiuna"]
+[ext_resource type="Texture2D" uid="uid://b3jplg5xlx6jx" path="res://icon.svg" id="3_4a3qj"]
+
+[node name="Start" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 2000.0
+offset_bottom = 2000.0
+mouse_filter = 0
+texture = ExtResource("1_y5hus")
+script = ExtResource("2_oiuna")
+
+[node name="TextureButton" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 1040.0
+offset_right = 257.0
+offset_bottom = 1168.0
+texture_normal = ExtResource("3_4a3qj")
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 315.0
+offset_right = 696.0
+offset_bottom = 462.0
+text = "Button"
+script = ExtResource("1_ots34")
+
+[connection signal="gui_input" from="TextureRect" to="TextureRect" method="_on_gui_input"]
+[connection signal="button_up" from="TextureRect/Button" to="TextureRect/Button" method="_on_button_up"]

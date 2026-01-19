@@ -99,7 +99,7 @@ früh,рано
 manchmal,иногда
 übermorgen,послезавтра
 vorgestern,позавчера
-vorher,"перед этим, до этого"
+vorher,"до этого (ранее)"
 wieder,снова
 zuerst,"сначала, для начала"
 zuletzt,в завершение
@@ -219,7 +219,6 @@ wählen,выбирать
 wecken,будить
 wehtun,делать больно
 weitermachen,продолжать
-weiterhelfen,помочь продвинуться в чем-либо
 austragen,разносить
 bauen,строить
 herstellen,производить
@@ -296,7 +295,7 @@ nützlich,полезный
 praktisch,практичный
 plötzlich,внезапный
 privat,"личный, приватный"
-total,"полностью, на 100%"
+total,"полностью"
 unbedingt,безусловный
 vorsichtig,осторожный
 wahr,"истинный, правдивый"

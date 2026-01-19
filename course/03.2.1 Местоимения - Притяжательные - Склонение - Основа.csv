@@ -2,12 +2,12 @@ Question,Answer
 ~reverse,True
 ~forward,False
 
-mein,(чей) мой
-dein,(чей) твой
-sein,(чей) его (для "он")
-ihr,(чей) её
-sein,(чей) его (для "оно")
-unser,(чей) наш
-euer,(чей) ваш
-ihr,(чей) их
-Ihr,(чей) Ваш(ув)
+mein,мой; Possessiv
+dein,твой; Possessiv
+sein,его (для "он"); Possessiv
+ihr,её; Possessiv
+sein,его (для "оно"); Possessiv
+unser,наш; Possessiv
+euer,ваш; Possessiv
+ihr,их; Possessiv
+Ihr,Ваш(ув); Possessiv
