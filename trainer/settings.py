@@ -9,11 +9,11 @@ REMEMBERSEC = 6 * 31 * 24 * 3600 # полгода
 
 # ----------
 
-THEME = "lex"
-FILES = f"./source/{THEME}.files"
+# THEME = "lex"
+# FILES = f"./source/{THEME}.files"
 
-# THEME = "course"
-# FILES = f"./course/{THEME}.files"
+THEME = "course"
+FILES = f"./course/{THEME}.files"
 
 # ----------
 
