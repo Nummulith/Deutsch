@@ -2,26 +2,27 @@ Question,Answer
 ~comment,Beispiel_masc / Beispiel_fem / Beispiel_neut / Beispiel_pl / Case
 ~answer_language,de
 
-mit,mit dem Mann (Dativ)
-für,für den Mann (Akkusativ)
-nach,nach dem Urlaub (Dativ)
-um,um den Tisch (Akkusativ)
-aus,aus dem Zug (Dativ)
-durch,durch den Tunnel (Akkusativ)
-zu,zum Arzt (Dativ)
-ohne,ohne den Vater (Akkusativ)
-von,vom Lehrer (Dativ)
-gegen,gegen den Plan (Akkusativ)
-bei,beim Bäcker (Dativ)
-seit,seit dem Tag (Dativ)
-ab,ab dem Moment (Dativ)
+für ...[Fall],Akkusativ: das->fürs
+um ...[Fall],Akkusativ: das->ums
+durch ...[Fall],Akkusativ: das->durchs
+ohne ...[Fall],Akkusativ
+gegen ...[Fall],Akkusativ
 
-an,an den Strand (wohin Akk / wo Dat)
-in,in den Park (wohin Akk / wo Dat)
-auf,auf den Stuhl (wohin Akk / wo Dat)
-über,über den Fluss (wohin Akk / wo Dat)
-unter,unter den Tisch (wohin Akk / wo Dat)
-vor,vor den Eingang (wohin Akk / wo Dat)
-hinter,hinter den Schrank (wohin Akk / wo Dat)
-zwischen,zwischen den Stühlen (wohin Akk / wo Dat)
-neben,neben den Schrank (wohin Akk / wo Dat)
+mit ...[Fall],Dativ
+nach ...[Fall],Dativ
+aus ...[Fall],Dativ
+zu ...[Fall],"Dativ: dem->zum, der->zur"
+von ...[Fall],Dativ: dem->vom
+bei ...[Fall],Dativ: dem->beim
+seit ...[Fall],Dativ
+ab ...[Fall],Dativ
+
+an ...[Fall],"wohin Akk / wo Dat: dem->am, das->ans"
+in ...[Fall],"wohin Akk / wo Dat: dem->im, das->ins"
+auf ...[Fall],wohin Akk / wo Dat: das->aufs
+über ...[Fall],wohin Akk / wo Dat: das->übers
+unter ...[Fall],wohin Akk / wo Dat: das->unters
+vor ...[Fall],wohin Akk / wo Dat
+hinter ...[Fall],wohin Akk / wo Dat
+zwischen ...[Fall],wohin Akk / wo Dat
+neben ...[Fall],wohin Akk / wo Dat

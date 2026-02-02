@@ -2,22 +2,22 @@ Question,Answer
 ~question_language,de
 ~answer_language,de
 
-"ich, er/sie/es; должен (необх)",muss
-du; должен (необх),musst
-"wir/sie/Sie; должен (необх)",müssen
-ihr; должен (необх),müsst
-"ich, er/sie/es; должен (треб)",soll
-du; должен (треб),sollst
-"wir/sie/Sie; должен (треб)",sollen
-ihr; должен (треб),sollt
-"ich, er/sie/es; мочь (возм)",kann
-du; мочь (возм),kannst
-"wir/sie/Sie; мочь (возм)",können
-ihr; мочь (возм),könnt
-"ich, er/sie/es; мочь (разр)",darf
-du; мочь (разр),darfst
-"wir/sie/Sie; мочь (разр)",dürfen
-ihr; мочь (разр),dürft
+"ich, er/sie/es; должен по необходимости",muss
+du; должен по необходимости,musst
+"wir/sie/Sie; должен по необходимости",müssen
+ihr; должен по необходимости,müsst
+"ich, er/sie/es; должен по требованию",soll
+du; должен по требованию,sollst
+"wir/sie/Sie; должен по требованию",sollen
+ihr; должен по требованию,sollt
+"ich, er/sie/es; мочь по возможности",kann
+du; мочь по возможности,kannst
+"wir/sie/Sie; мочь по возможности",können
+ihr; мочь по возможности,könnt
+"ich, er/sie/es; мочь по разрешению",darf
+du; мочь по разрешению,darfst
+"wir/sie/Sie; мочь по разрешению",dürfen
+ihr; мочь по разрешению,dürft
 "ich, er/sie/es; желать",will
 du; желать,willst
 "wir/sie/Sie; желать",wollen
@@ -27,15 +27,15 @@ du; предпочитаю,magst
 "wir/sie/Sie; предпочитаю",mögen
 ihr; предпочитаю,mögt
 
-"ich, er/sie/es; предпочел бы (вежл)",möchte
-du; предпочел бы (вежл),möchtest
-"wir/sie/Sie; предпочел бы" (вежл),möchten
-ihr; предпочел бы (вежл),möchtet
-"ich, er/sie/es; мог бы (вежл)",könnte
-"du; мог бы (вежл)",könntest
-"wir/sie/Sie; мог бы (вежл)",könnten
-"ihr; мог бы (вежл)",könntet
-"ich, er/sie/es; стал бы (вежл)",würde
-"du; стал бы (вежл)",würdest
-"wir/sie/Sie; стал бы (вежл)",würden
-"ihr; стал бы (вежл)",würdet
+"ich, er/sie/es; предпочел бы (вежливо)",möchte
+du; предпочел бы (вежливо),möchtest
+"wir/sie/Sie; предпочел бы" (вежливо),möchten
+ihr; предпочел бы (вежливо),möchtet
+"ich, er/sie/es; мог бы (вежливо)",könnte
+"du; мог бы (вежливо)",könntest
+"wir/sie/Sie; мог бы (вежливо)",könnten
+"ihr; мог бы (вежливо)",könntet
+"ich, er/sie/es; стал бы (вежливо)",würde
+"du; стал бы (вежливо)",würdest
+"wir/sie/Sie; стал бы (вежливо)",würden
+"ihr; стал бы (вежливо)",würdet
