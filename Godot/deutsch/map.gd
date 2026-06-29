@@ -15,6 +15,16 @@ var drag_offset = Vector2()
 var min_position = Vector2(0, 0)
 var max_position = Vector2(500, 500)  # Границы перемещения
 
+# Переменные для масштабирования
+var min_scale: float = 0.1
+var max_scale: float = 5.0
+var zoom_speed: float = 0.1
+
+# Для мультитача (два пальца)
+var touch_points = {}  # Словарь для хранения точек касания
+var initial_distance: float = 0.0
+var initial_scale: float = 1.0
+
 # Загружаем класс через preload
 const ButtonData = preload("res://ButtonData.gd")
 
@@ -25,7 +35,7 @@ func _ready():
 	mouse_filter = MOUSE_FILTER_STOP
 	
 	#scale = Vector2(2, 2)
-	size = size * Vector2(10, 10)
+#	size = size * Vector2(10, 10)
 	print("TextureRect увеличен в 10 раз! Размер: ", size * scale)
 
 	var screen_size   = get_viewport().get_visible_rect().size
@@ -41,23 +51,123 @@ func _ready():
 
 	create_buttons(button_count)
 
+	scale = Vector2(1, 1)
+
 	
 func _on_gui_input(event: InputEvent) -> void:
-	if event is InputEventScreenTouch or event is InputEventMouseButton:
-		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-			dragging = true
-			drag_offset = get_global_mouse_position() - global_position
-		else:
-			dragging = false
+	#if event is InputEventScreenTouch or event is InputEventMouseButton:
+		#if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			#dragging = true
+			#drag_offset = get_global_mouse_position() - global_position
+		#else:
+			#dragging = false
 	
+	if event is InputEventMouseButton:
+		# Левая кнопка - перетаскивание
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.pressed:
+				dragging = true
+				drag_offset = get_global_mouse_position() - global_position
+			else:
+				dragging = false
+		
+		# Колесико мыши - масштабирование
+		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
+			if event.pressed:
+				zoom_in(get_global_mouse_position())
+		
+		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+			if event.pressed:
+				zoom_out(get_global_mouse_position())
+	#
 	if event is InputEventScreenDrag or event is InputEventMouseMotion:
 		if dragging:
 			var new_pos = get_global_mouse_position() - drag_offset
 			# Ограничиваем перемещение
-			#min_position.x = -size.x
 			new_pos.x = clamp(new_pos.x, min_position.x, max_position.x)
 			new_pos.y = clamp(new_pos.y, min_position.y, max_position.y)
 			global_position = new_pos
+			#
+			#
+	# === ОБРАБОТКА МУЛЬТИТАЧ (ДВА ПАЛЬЦА) ===
+	if event is InputEventScreenTouch:
+		var touch_event = event as InputEventScreenTouch
+		var index = touch_event.index
+		
+		if touch_event.pressed:
+			# Палец коснулся экрана
+			touch_points[index] = touch_event.position
+			
+			# Если два пальца на экране
+			if touch_points.size() == 2:
+				initial_distance = get_touch_distance()
+				initial_scale = scale.x
+				print("Два пальца! Дистанция: ", initial_distance)
+		
+		else:
+			# Палец оторвался от экрана
+			touch_points.erase(index)
+			
+			# Если остался один палец - переключаемся в режим перетаскивания
+			if touch_points.size() == 1:
+				# Начинаем перетаскивание одним пальцем
+				var pos = touch_points.values()[0]
+				dragging = true
+				drag_offset = pos - global_position
+
+# === ФУНКЦИИ ДЛЯ МУЛЬТИТАЧА ===
+
+func get_touch_distance() -> float:
+	if touch_points.size() < 2:
+		return 0.0
+	
+	var positions = touch_points.values()
+	return positions[0].distance_to(positions[1])
+
+func get_touch_center() -> Vector2:
+	if touch_points.size() < 2:
+		return Vector2.ZERO
+	
+	var positions = touch_points.values()
+	return (positions[0] + positions[1]) / 2
+
+# === ФУНКЦИИ МАСШТАБИРОВАНИЯ ===
+
+func zoom_in(center: Vector2 = Vector2.ZERO):
+	var new_scale = scale.x + zoom_speed
+	new_scale = clamp(new_scale, min_scale, max_scale)
+	zoom_around_point(center, new_scale)
+
+func zoom_out(center: Vector2 = Vector2.ZERO):
+	var new_scale = scale.x - zoom_speed
+	new_scale = clamp(new_scale, min_scale, max_scale)
+	zoom_around_point(center, new_scale)
+
+func zoom_around_point(point: Vector2, new_scale: float):
+	if point == Vector2.ZERO:
+		# Если точка не задана - масштабируем относительно центра объекта
+		point = global_position + size * 0.5 * scale
+	
+	# Сохраняем мировые координаты точки
+	var world_point = point
+	var old_scale = scale.x
+	
+	# Применяем новый масштаб
+	scale = Vector2(new_scale, new_scale)
+	
+	# Корректируем позицию, чтобы точка осталась на месте
+	var scale_factor = new_scale / old_scale
+	global_position = world_point - (world_point - global_position) * scale_factor / old_scale * old_scale
+	
+	# Ограничиваем позицию
+	clamp_position(global_position)
+
+func clamp_position(pos: Vector2) -> Vector2:
+	var new_pos = pos
+	new_pos.x = clamp(new_pos.x, min_position.x, max_position.x)
+	new_pos.y = clamp(new_pos.y, min_position.y, max_position.y)
+	return new_pos
+
 
 
 func create_buttons(count: int):

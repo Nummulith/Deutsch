@@ -17,3 +17,4 @@ debug.log
 *.apk
 *.idsig
 *.tmp
+/Godot/deutsch/img/source
