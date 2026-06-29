@@ -14,3 +14,6 @@ debug.log
 *.db.dat
 *.db.dir
 /trainer/__pycache__
+*.apk
+*.idsig
+*.tmp
