@@ -38,6 +38,6 @@ with open(filename, "a", encoding="utf-8") as file:
         last = dt["last"]
         reme = dt["remembered"]
         file.write(""\
-            + word + ";"\
-            + time_to_string (last) + ";"\
+            + word + "@"\
+            + time_to_string (last) + "@"\
             + delta_to_string(reme) + "\n")

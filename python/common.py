@@ -13,7 +13,7 @@ def filesFromFiles(files_path):
             for row in reader:
                 filename = row["Path"]
                 filenames += filesFromFiles(filename)
-    elif files_path.endswith(".csv"):
+    elif files_path.endswith(".csv") or files_path.endswith(".txt"):
         filenames += [files_path]
     else: # folder
         for filename in os.listdir(files_path):
